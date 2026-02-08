@@ -119,3 +119,35 @@ export const generateBreadcrumbSchema = (items: { name: string; item: string }[]
         "item": item.item.startsWith('http') ? item.item : `https://www.wbbt.net${item.item}`
     }))
 });
+
+export const generateServiceSchema = (serviceName: string, serviceType: string, description: string) => ({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": serviceName,
+    "serviceType": serviceType,
+    "provider": {
+        "@type": "Organization",
+        "name": "WBBT Records",
+        "url": "https://www.wbbt.net"
+    },
+    "description": description,
+    "areaServed": "Global",
+    "url": "https://www.wbbt.net/services"
+});
+
+export const generateContactPageSchema = () => ({
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Submit Demo | Contact WBBT Records",
+    "url": "https://www.wbbt.net/submit",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "WBBT Records",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Girişimci / Demo Submission",
+            "email": "demo@wbbt.net",
+            "url": "https://app.wbbt.net"
+        }
+    }
+});

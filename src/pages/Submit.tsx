@@ -10,6 +10,23 @@ const SubmitPage = () => {
                 title="Submit Demo | WBBT Records"
                 description="Submit your demo to WBBT Records. We are looking for the next generation of electronic and dark pop artists."
                 keywords="Demo Submission, Record Label Submission, Send Demo, Music Submission, WBBT Records Demo"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "ContactPage",
+                    "name": "Submit Demo | Contact WBBT Records",
+                    "url": "https://www.wbbt.net/submit",
+                    "mainEntity": {
+                        "@type": "Organization",
+                        "name": "WBBT Records",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "contactType": "Demo Submission",
+                            "email": "demo@wbbt.net",
+                            "availableLanguage": ["English", "Turkish"],
+                            "url": "https://app.wbbt.net"
+                        }
+                    }
+                }}
             />
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}

@@ -132,6 +132,18 @@ const ServicesPage = () => {
                 title="Services | WBBT - Music Distribution, PR & Audio Technology"
                 description="Discover WBBT's comprehensive music services: global distribution, professional PR, and upcoming audio technologies."
                 keywords="Music Services, Music Distribution, Music PR, Audio Plugins, Record Label Services, WBBT Records"
+                schema={services.map(s => ({
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "name": s.name,
+                    "serviceType": s.tagline,
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "WBBT Records"
+                    },
+                    "description": s.description.substring(0, 150),
+                    "url": `https://www.wbbt.net/services#${s.id}`
+                }))}
             />
 
             <div className="pt-32 pb-20 px-6 md:px-12 max-w-[1600px] mx-auto min-h-screen">
