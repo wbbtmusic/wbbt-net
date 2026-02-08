@@ -1,7 +1,7 @@
-import { BlogPost } from '../types';
+import { BlogPost } from '../../types';
 
 export const post61: BlogPost = {
-  id: '61',
+  id: 61,
   title: "Spotify vs. Apple Music vs. YouTube Music: The 2026 Artist's Guide",
   slug: 'spotify-vs-apple-vs-youtube-2026',
   date: '2026-02-08',
