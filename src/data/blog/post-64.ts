@@ -7,8 +7,8 @@ export const post64: BlogPost = {
     date: "February 12, 2026",
     author: "WBBT Editorial Team",
     category: "Music Business",
-    tags: ["Music Distribution", "Indie Artist", "Spotify for Artists", "Record Label", "Free Music Distribution"],
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
+    tags: "Music Distribution, Indie Artist, Spotify for Artists, Record Label, Free Music Distribution",
+    image: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2073&auto=format&fit=crop",
     metaDesc: "Looking for free music distribution in 2026? We review the top sites like Amuse, FreshTunes, and SoundOn, and explain the hidden costs of 'free'.",
     content: `
     <p>Getting your music on Spotify and Apple Music used to cost a fortune. Today, you can do it for free. Literally $0.</p>
