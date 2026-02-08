@@ -6,7 +6,7 @@ export const post61: BlogPost = {
   slug: 'spotify-vs-apple-vs-youtube-2026',
   date: '2026-02-08',
   category: 'Streaming & Playlists',
-  excerpt: 'A brutally honest, data-driven comparison of the big three streaming giants. We break down payouts, discovery algorithms, and artist tools to help you decide where to focus your energy.',
+  metaDesc: 'A brutally honest, data-driven comparison of the big three streaming giants. We break down payouts, discovery algorithms, and artist tools to help you decide where to focus your energy.',
   image: '/images/blog/music-streaming-stock.jpg',
   content: `
     <article>
@@ -108,7 +108,5 @@ export const post61: BlogPost = {
       <p>At WBBT Records, we distribute to all three (and 50+ others) simultaneously, but we tailor the marketing message for each platform's unique strengths.</p>
     </article>
   `,
-  author: 'WBBT Strategy Team',
-  readTime: '6 min read',
-  relatedPosts: ['58', '60', '31']
+  author: 'WBBT Strategy Team'
 };
