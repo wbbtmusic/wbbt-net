@@ -1,13 +1,28 @@
 #!/bin/bash
 
-echo "🚀 Starting Update Process..."
+# Configuration
+LOG_FILE="/root/wbbt-net/update.log"
 
-# 1. Pull latest code
-echo "📥 Pulling latest changes from GitHub..."
-git pull origin main
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"
+}
 
-# 2. Rebuild and restart the app
-echo "🔄 Rebuilding and restarting container..."
-docker compose up -d --build
+cd /root/wbbt-net || { log "❌ Directory not found!"; exit 1; }
 
-echo "✅ Update Complete! Site is live."
+# Check for updates
+git fetch origin main
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse @{u})
+
+if [ $LOCAL = $REMOTE ]; then
+    # No changes
+    exit 0
+else
+    log "🚀 New update found. Pulling changes..."
+    git pull origin main >> "$LOG_FILE" 2>&1
+    
+    log "🔄 Rebuilding container..."
+    docker compose up -d --build >> "$LOG_FILE" 2>&1
+    
+    log "✅ Update applied successfully."
+fi
