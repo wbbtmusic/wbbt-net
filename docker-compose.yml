@@ -5,20 +5,7 @@ services:
     build: .
     restart: always
     container_name: wbbt-app
-
-  caddy:
-    image: caddy:alpine
-    restart: always
     ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
-      - caddy_data:/data
-      - caddy_config:/config
-    depends_on:
-      - app
-
-volumes:
-  caddy_data:
-  caddy_config:
+      - "3005:80"
+    # Port 3005 is exposed to the host.
+    # Point your existing Caddy to: reverse_proxy localhost:3005

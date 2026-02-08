@@ -6,8 +6,8 @@ echo "🚀 Starting Update Process..."
 echo "📥 Pulling latest changes from GitHub..."
 git pull origin main
 
-# 2. Rebuild and restart containers
-echo "🔄 Rebuilding and restarting containers..."
-docker compose up -d --build --remove-orphans
+# 2. Rebuild and restart the app
+echo "🔄 Rebuilding and restarting container..."
+docker compose up -d --build
 
 echo "✅ Update Complete! Site is live."
