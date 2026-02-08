@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Music, Megaphone, Headphones, Sliders, Mic2, ArrowRight, Clock, ScrollText, ShieldCheck, Coins, Video, ChevronRight } from 'lucide-react';
+import { Music, Megaphone, Headphones, Sliders, Mic2, ArrowRight, Clock, ScrollText, ShieldCheck, Coins, Video, ChevronRight, Radio } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -11,6 +11,7 @@ interface Service {
     tagline: string;
     icon: React.ElementType;
     comingSoon?: boolean;
+    isNew?: boolean;
     description: string;
     features?: string[];
     link?: string;
@@ -19,15 +20,28 @@ interface Service {
 
 const services: Service[] = [
     {
+        id: 'radio',
+        name: 'Global Radio Pitching',
+        tagline: 'Airplay & Promotion',
+        icon: Radio,
+        isNew: true,
+        description: `Get your music heard on the airwaves. WBBT Records actively pitches your tracks to a curated network of global radio stations completely free of charge.
+        
+        Every month, we select the best releases from our roster and push them to radio partners worldwide. This isn't an automated email blast; it's a dedicated pitching service designed to get your music real airtime and expose you to new audiences beyond streaming algorithms.`,
+        features: ['Global Radio Network', 'Direct Pitching', 'Monthly Selections', '100% Free Service', 'Airplay Analytics', 'Genre-Specific Targeting'],
+        link: '/submit',
+        linkText: 'Submit for Airplay'
+    },
+    {
         id: 'records',
         name: 'WBBT Records',
         tagline: 'Music Distribution',
         icon: Music,
-        description: `Important: We are not just a distributor — we are a record label. When you sign with WBBT Records, you become part of a family that genuinely invests in your success.
+        description: `Important: We are not just a distributor - we are a record label. When you sign with WBBT Records, you become part of a family that genuinely invests in your success.
 
 Your gateway to the world's biggest streaming platforms. WBBT Records delivers your music to over 150+ digital stores and streaming services including Spotify, Apple Music, Amazon Music, Deezer, Tidal, YouTube Music, and countless others across every continent.
 
-We don't just distribute — we optimize. Our team ensures your releases are properly formatted, tagged with rich metadata, and strategically scheduled for maximum impact. With our advanced analytics dashboard, you'll track your streams, revenue, and audience demographics in real-time.`,
+We don't just distribute - we optimize. Our team ensures your releases are properly formatted, tagged with rich metadata, and strategically scheduled for maximum impact. With our advanced analytics dashboard, you'll track your streams, revenue, and audience demographics in real-time.`,
         features: ['150+ Streaming Platforms', 'Global Distribution', 'Royalty Collection', 'Analytics Dashboard', 'Release Scheduling', 'Metadata Optimization'],
         link: '/submit',
         linkText: 'Submit Your Music'
@@ -195,6 +209,13 @@ const ServicesPage = () => {
                                                 <Clock className="w-4 h-4 text-yellow-500 opacity-50" />
                                             </div>
                                         )}
+                                        {service.isNew && (
+                                            <div className="absolute top-6 right-12 lg:right-12">
+                                                <span className="px-2 py-1 bg-green-500/20 text-green-400 text-[10px] font-bold uppercase rounded-full border border-green-500/20 shadow-[0_0_10px_rgba(74,222,128,0.2)] animate-pulse">
+                                                    NEW
+                                                </span>
+                                            </div>
+                                        )}
                                     </button>
 
                                     {/* MOBILE CONTENT: Accordion Expansion */}
@@ -275,6 +296,11 @@ const ServicesPage = () => {
                                             {activeService.comingSoon && (
                                                 <span className="px-3 py-1 bg-yellow-500/20 text-yellow-500 text-xs font-bold uppercase rounded-full border border-yellow-500/20">
                                                     Coming Soon
+                                                </span>
+                                            )}
+                                            {activeService.isNew && (
+                                                <span className="px-3 py-1 bg-green-500/20 text-green-400 text-xs font-bold uppercase rounded-full border border-green-500/20 shadow-[0_0_15px_rgba(74,222,128,0.3)]">
+                                                    NEW SERVICE
                                                 </span>
                                             )}
                                         </div>

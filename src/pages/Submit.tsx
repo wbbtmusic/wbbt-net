@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Music, UploadCloud } from 'lucide-react';
+import { ArrowRight, Music, UploadCloud, Radio } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const SubmitPage = () => {
@@ -145,6 +145,32 @@ const SubmitPage = () => {
 
                         {/* Right: Services List */}
                         <div className="space-y-4">
+                            {/* NEW SERVICE: Radio Pitching */}
+                            <div className="bg-gradient-to-r from-purple-900/40 to-white/5 rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/60 transition-all relative overflow-hidden group">
+                                <div className="absolute top-3 right-3">
+                                    <span className="px-2 py-0.5 bg-green-500/20 text-green-400 text-[10px] font-bold uppercase rounded-full border border-green-500/20 animate-pulse">
+                                        NEW
+                                    </span>
+                                </div>
+                                <div className="flex items-center gap-3 mb-2">
+                                    <div className="p-2 bg-purple-500/20 rounded-lg text-purple-400 group-hover:text-purple-300 transition-colors">
+                                        <Radio size={20} />
+                                    </div>
+                                    <h3 className="text-lg font-bold text-white">Global Radio Pitching</h3>
+                                </div>
+                                <p className="text-gray-300 text-sm leading-snug mb-3">
+                                    We pitch your tracks to a curated network of global radio stations. Real airplay, real exposure.
+                                </p>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider text-green-400 bg-green-900/20 px-2 py-1 rounded inline-block">
+                                        100% FREE
+                                    </span>
+                                    <a href="/services" className="text-xs font-bold text-purple-400 hover:text-white transition-colors ml-auto flex items-center gap-1">
+                                        DETAILS <ArrowRight size={12} />
+                                    </a>
+                                </div>
+                            </div>
+
                             <div className="bg-white/5 rounded-xl p-6 border border-white/5 hover:bg-white/10 transition-colors">
                                 <h3 className="text-lg font-bold text-purple-400 mb-1">Metadata & Assets</h3>
                                 <p className="text-gray-400 text-sm leading-snug">

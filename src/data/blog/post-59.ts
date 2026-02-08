@@ -39,7 +39,7 @@ export const post59: BlogPost = {
                 This is the guide for engineers, not hobbyists.
             </p>
 
-            <div class="my-12 w-full h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+
 
             <h2 class="text-4xl font-black text-white mt-20 mb-8">1. The Architecture: Transformers vs Diffusion</h2>
             <p class="text-gray-300 mb-8 leading-relaxed text-lg">

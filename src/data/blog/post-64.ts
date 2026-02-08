@@ -35,12 +35,12 @@ export const post64: BlogPost = {
     <p><strong>The Good:</strong> The new kids on the block using Web3 tech to lower costs. 100% royalties.</p>
     <p><strong>The Bad:</strong> Less proven track record than the giants.</p>
 
-    <hr />
+
 
     <h2>The Hidden Cost of "Free"</h2>
     <p>Why do these companies let you upload for free? Because they are banking on two things:</p>
     <ol>
-        <li><strong>Upsells:</strong> They will charge you for things that should be standard—like YouTube Content ID, quicker support, or adding a second artist.</li>
+        <li><strong>Upsells:</strong> They will charge you for things that should be standard like YouTube Content ID, quicker support, or adding a second artist.</li>
         <li><strong>Data:</strong> They want to find the next big star.</li>
         <li><strong>Speed Throttling:</strong> Free releases often sit in "review" for 3-4 weeks. In a fast-paced industry, timing is everything.</li>
     </ol>

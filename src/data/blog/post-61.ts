@@ -12,7 +12,7 @@ export const post61: BlogPost = {
     <article>
       <p class="lead">In the chaotic landscape of 2026, "being everywhere" is still good advice, but "focusing everywhere" is a recipe for burnout. We've crunched the numbers, analyzed the algorithms, and tested the artist tools to give you the definitive comparison of the Big Three.</p>
 
-      <hr class="my-8 border-white/10" />
+
 
       <h2>1. The Payout Reality Check</h2>
       <p>Let's start with the money. It's not just about "per stream" anymore; it's about the payout models.</p>
@@ -48,7 +48,7 @@ export const post61: BlogPost = {
 
       <p><strong>The Verdict:</strong> Apple Music still pays the best per stream, but Spotify's volume often leads to higher total revenue for viral tracks. YouTube is the wildcard—low audio payouts, but massive potential via Content ID on Shorts.</p>
 
-      <hr class="my-8 border-white/10" />
+
 
       <h2>2. Discovery Algorithms: Who Finds Your Fans?</h2>
       
@@ -92,7 +92,7 @@ export const post61: BlogPost = {
         </li>
       </ul>
 
-      <hr class="my-8 border-white/10" />
+
 
       <h2>Final Recommendation</h2>
 

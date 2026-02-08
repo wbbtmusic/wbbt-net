@@ -42,7 +42,7 @@ export const post58: BlogPost = {
                 We pushed all three to the breaking point on an M3 Max MacBook Pro.
             </p>
 
-            <div class="my-12 w-full h-px bg-gradient-to-r from-transparent via-gray-500/50 to-transparent"></div>
+
 
             <h2 class="text-4xl font-black text-white mt-20 mb-8">1. The Core Engines: Audio Performance</h2>
             <p class="text-gray-300 mb-8 leading-relaxed text-lg">
