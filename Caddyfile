@@ -1,0 +1,5 @@
+# Caddyfile
+# Replace :80 with your domain (e.g., wbbt.net) for automatic HTTPS
+:80 {
+    reverse_proxy app:80
+}
