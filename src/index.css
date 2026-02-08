@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #050505;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Glitch Effect */
+.glitch-effect {
+  animation: glitch 0.2s ease-in-out;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+    filter: hue-rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-5px, 2px);
+    filter: hue-rotate(90deg);
+    clip-path: inset(20% 0 30% 0);
+  }
+
+  40% {
+    transform: translate(5px, -2px);
+    filter: hue-rotate(-90deg);
+    clip-path: inset(50% 0 10% 0);
+  }
+
+  60% {
+    transform: translate(-3px, 1px);
+    filter: hue-rotate(180deg);
+    clip-path: inset(10% 0 60% 0);
+  }
+
+  80% {
+    transform: translate(3px, -1px);
+    filter: hue-rotate(-180deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+    filter: hue-rotate(0deg);
+    clip-path: none;
+  }
+}
+
+/* ========================================
+   MOBILE OPTIMIZATIONS
+   ======================================== */
+
+/* Hide scrollbar for horizontal scrolls on mobile */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area support for notched devices */
+@supports (padding: max(0px)) {
+  .safe-area-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+
+  .safe-area-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Touch-friendly tap targets */
+@media (max-width: 768px) {
+
+  /* Increase touch targets */
+  button,
+  a {
+    min-height: 44px;
+  }
+
+  /* Disable hover effects on touch devices */
+  @media (hover: none) {
+    .group:hover .group-hover\:grayscale-0 {
+      filter: grayscale(100%);
+    }
+  }
+
+  /* Smoother scrolling on iOS */
+  .overflow-x-auto,
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent text selection on interactive elements */
+  button,
+  a,
+  .cursor-pointer {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  /* Smaller fonts on mobile */
+  .text-7xl {
+    font-size: 3rem;
+  }
+
+  .text-6xl {
+    font-size: 2.5rem;
+  }
+
+  .text-5xl {
+    font-size: 2rem;
+  }
+
+  /* Hide cursor follower on mobile */
+  .cursor-follower {
+    display: none !important;
+  }
+}
+
+/* Responsive release cards */
+@media (max-width: 640px) {
+  .min-w-\[240px\] {
+    min-width: 180px;
+  }
+}
+
+/* Modal scrolling fix */
+.modal-scroll {
+  overscroll-behavior: contain;
+}
+
+/* ========================================
+   BLOG ENHANCEMENTS & VIBRANT UTILITIES
+   ======================================== */
+
+/* Mesh Gradient Background Animation */
+.animate-gradient-xy {
+  animation: gradient-xy 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient-xy {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Text Gradients */
+.text-gradient-purple {
+  background: linear-gradient(to right, #c084fc, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(to right, #22d3ee, #0ea5e9, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glassmorphism Cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.15);
+}
+
+/* Neon Glow Utilities */
+.glow-text-purple {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+
+.glow-box-purple {
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.1);
+}
+
+/* Custom Selection Color */
+::selection {
+  background: rgba(168, 85, 247, 0.3);
+  color: white;
+}

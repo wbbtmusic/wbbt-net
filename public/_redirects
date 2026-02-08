@@ -1,0 +1,11 @@
+# Legacy Redirects (Wix Mapping)
+# These prevent link rot from old indexing
+
+/post/*  /blog/:splat  301
+/about-us  /about  301
+/contact  /submit  301
+/music  /releases  301
+/artists-roster  /artists  301
+
+# Fallback
+/*  /index.html  200

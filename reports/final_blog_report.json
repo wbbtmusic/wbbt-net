@@ -1,0 +1,82 @@
+{
+  "total": 42,
+  "shortContent": [
+    {
+      "id": 9,
+      "title": "Virtual Concerts: The New Live Experience",
+      "length": 854
+    },
+    {
+      "id": 11,
+      "title": "Grey Aesthetics: Minimalist Design Trends",
+      "length": 790
+    },
+    {
+      "id": 12,
+      "title": "Interactive Virtual Concerts: Engaging Fans",
+      "length": 700
+    },
+    {
+      "id": 14,
+      "title": "TikTok Ban Guide: Social Media Alternatives",
+      "length": 663
+    },
+    {
+      "id": 16,
+      "title": "Music Industry Trends 2025: AI & NFTs",
+      "length": 389
+    },
+    {
+      "id": 30,
+      "title": "YouTube Branding & Visibility for Musicians",
+      "length": 443
+    },
+    {
+      "id": 38,
+      "title": "Direct-to-Fan Strategy: Maximizing Recurring Revenue",
+      "length": 790
+    },
+    {
+      "id": 39,
+      "title": "Web3 & Music: The Decentralized Revolution",
+      "length": 710
+    },
+    {
+      "id": 40,
+      "title": "Artist Wellness: Mental Health in the Fast Lane",
+      "length": 654
+    },
+    {
+      "id": 41,
+      "title": "Mastering Sync Licensing: Music for Media",
+      "length": 654
+    },
+    {
+      "id": 42,
+      "title": "Data Mastery: Analytics for the Modern Artist",
+      "length": 726
+    }
+  ],
+  "missingImages": [
+    {
+      "id": 14,
+      "title": "TikTok Ban Guide: Social Media Alternatives",
+      "path": "/images/blog/blog-14.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Music Industry Trends 2025: AI & NFTs",
+      "path": "/images/blog/blog-16.jpg"
+    },
+    {
+      "id": 33,
+      "title": "Music Licensing: Unlocking Sync Potential",
+      "path": "/images/blog/blog-33.jpg"
+    },
+    {
+      "id": 39,
+      "title": "Web3 & Music: The Decentralized Revolution",
+      "path": "/images/blog/blog-39.jpg"
+    }
+  ]
+}
