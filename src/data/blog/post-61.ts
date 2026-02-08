@@ -7,7 +7,7 @@ export const post61: BlogPost = {
   date: '2026-02-08',
   category: 'Streaming & Playlists',
   excerpt: 'A brutally honest, data-driven comparison of the big three streaming giants. We break down payouts, discovery algorithms, and artist tools to help you decide where to focus your energy.',
-  image: '/images/blog/blog-1.jpg',
+  image: '/images/blog/music-streaming-stock.jpg',
   content: `
     <article>
       <p class="lead">In the chaotic landscape of 2026, "being everywhere" is still good advice, but "focusing everywhere" is a recipe for burnout. We've crunched the numbers, analyzed the algorithms, and tested the artist tools to give you the definitive comparison of the Big Three.</p>
