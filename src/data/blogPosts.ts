@@ -63,8 +63,6 @@ import { post62 } from './blog/post-62';
 import { post63 } from './blog/post-63';
 import { post64 } from './blog/post-64';
 import { post60 } from './blog/post-60';
-import { post63 } from './blog/post-63';
-import { post64 } from './blog/post-64';
 
 export const BLOG_POSTS: BlogPost[] = [
     post64,

@@ -1,4 +1,4 @@
-import { BlogPost } from '../blogPosts';
+import { BlogPost } from '../../types';
 
 export const post64: BlogPost = {
     id: 64,
