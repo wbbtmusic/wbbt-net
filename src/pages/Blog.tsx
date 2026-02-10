@@ -12,9 +12,9 @@ const BlogPage = () => {
     return (
         <div className="pt-32 pb-20 px-6 md:px-12 max-w-[1600px] mx-auto min-h-screen relative z-10">
             <SEO
-                title="WBBT Records Journal | Music Production & Industry Insights"
-                description="Explore the WBBT Records journal for the latest in music production tips, industry trends, and artist spotlights."
-                keywords="Music Blog, Music Production Tips, Record Label Blog, EDM Industry, Artist Interviews"
+                title="Music Industry Blog | Tips, Tutorials & News — WBBT Records"
+                description="Free guides on music production, marketing, distribution, and artist development. Expert tips from WBBT Records. Müzik prodüksiyon ipuçları, sanatçı geliştirme rehberleri."
+                keywords="Music Blog, Music Production Tips, Record Label Blog, EDM Industry, Artist Interviews, Müzik Prodüksiyon, Sanatçı İpuçları, Müzik Endüstrisi, Free Music Guide"
             />
             {/* Background elements */}
             <div className="fixed inset-0 pointer-events-none z-[-1]">

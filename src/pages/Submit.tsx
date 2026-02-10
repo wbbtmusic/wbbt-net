@@ -2,31 +2,40 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Music, UploadCloud, Radio } from 'lucide-react';
 import SEO from '../components/SEO';
+import { generateFAQSchema } from '../utils/seoUtils';
 
 const SubmitPage = () => {
     return (
         <div className="pt-32 pb-20 px-6 max-w-[1600px] mx-auto min-h-screen flex flex-col items-center justify-center text-center">
             <SEO
-                title="Submit Demo | WBBT Records"
-                description="Submit your demo to WBBT Records. We are looking for the next generation of electronic and dark pop artists."
-                keywords="Demo Submission, Record Label Submission, Send Demo, Music Submission, WBBT Records Demo"
-                schema={{
-                    "@context": "https://schema.org",
-                    "@type": "ContactPage",
-                    "name": "Submit Demo | Contact WBBT Records",
-                    "url": "https://www.wbbt.net/submit",
-                    "mainEntity": {
-                        "@type": "Organization",
-                        "name": "WBBT Records",
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "contactType": "Demo Submission",
-                            "email": "demo@wbbt.net",
-                            "availableLanguage": ["English", "Turkish"],
-                            "url": "https://app.wbbt.net"
+                title="Submit Your Demo | Free Music Distribution — WBBT Records"
+                description="Submit your demo to WBBT Records for free music distribution. We accept EDM, Dark Pop, and experimental music. Start your artist journey today. Demo gönder, bedava müzik dağıtımı."
+                keywords="Submit Demo, Demo Gönder, Free Music Distribution, Bedava Müzik Dağıtımı, Record Label Submission, Kayıt Etiketi Başvuru, Music Submission, WBBT Records Demo, Bağımsız Sanatçı"
+                schema={[
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "ContactPage",
+                        "name": "Submit Demo | Contact WBBT Records",
+                        "url": "https://www.wbbt.net/submit",
+                        "mainEntity": {
+                            "@type": "Organization",
+                            "name": "WBBT Records",
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "contactType": "Demo Submission",
+                                "email": "demo@wbbt.net",
+                                "availableLanguage": ["English", "Turkish"],
+                                "url": "https://app.wbbt.net"
+                            }
                         }
-                    }
-                }}
+                    },
+                    generateFAQSchema([
+                        { question: "How do I submit a demo to WBBT Records?", answer: "Visit app.wbbt.net, create a free account, and upload your track. Include your artist name, track title, and a brief bio. Our A&R team reviews every submission personally within 7-14 business days." },
+                        { question: "Is submitting a demo free?", answer: "Yes, submitting a demo to WBBT Records is completely free. There are no upfront fees, no hidden charges, and no annual subscriptions required." },
+                        { question: "How long until I hear back about my demo?", answer: "Our A&R team reviews each submission personally. You can expect a response within 7-14 business days. If your music is a fit for our roster, we'll reach out to discuss next steps." },
+                        { question: "What file formats do you accept?", answer: "We accept WAV files (minimum 16-bit/44.1kHz) for the best audio quality. MP3 files (320kbps) are also accepted for initial demo review. Final releases must be in WAV format." }
+                    ])
+                ]}
             />
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}

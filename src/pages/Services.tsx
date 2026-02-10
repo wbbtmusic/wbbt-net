@@ -4,6 +4,7 @@ import { Music, Megaphone, Headphones, Sliders, Mic2, ArrowRight, Clock, ScrollT
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { generateFAQSchema } from '../utils/seoUtils';
 
 interface Service {
     id: string;
@@ -143,21 +144,31 @@ const ServicesPage = () => {
     return (
         <>
             <SEO
-                title="Services | WBBT - Music Distribution, PR & Audio Technology"
-                description="Discover WBBT's comprehensive music services: global distribution, professional PR, and upcoming audio technologies."
-                keywords="Music Services, Music Distribution, Music PR, Audio Plugins, Record Label Services, WBBT Records"
-                schema={services.map(s => ({
-                    "@context": "https://schema.org",
-                    "@type": "Service",
-                    "name": s.name,
-                    "serviceType": s.tagline,
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "WBBT Records"
-                    },
-                    "description": s.description.substring(0, 150),
-                    "url": `https://www.wbbt.net/services#${s.id}`
-                }))}
+                title="Music Distribution & Label Services | WBBT Records — Free for Artists"
+                description="Free music distribution to Spotify, Apple Music, Amazon & 150+ platforms. Professional PR, marketing strategy, and audio technology services for independent artists. Bedava müzik dağıtımı hizmeti."
+                keywords="Free Music Distribution, Music Distribution Service, Bedava Müzik Dağıtımı, Müzik Dağıtım Platformu, Music PR, Audio Plugins, Record Label Services, Sanatçı Geliştirme, WBBT Records"
+                schema={[
+                    ...services.map(s => ({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": s.name,
+                        "serviceType": s.tagline,
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "WBBT Records"
+                        },
+                        "description": s.description.substring(0, 150),
+                        "url": `https://www.wbbt.net/services#${s.id}`
+                    })),
+                    generateFAQSchema([
+                        { question: "Is WBBT Records music distribution free?", answer: "Yes! WBBT Records offers free music distribution to over 150 streaming platforms including Spotify, Apple Music, Amazon Music, and more. We take a standard 30% commission on royalties, with flexible lower rates available depending on the agreement." },
+                        { question: "How long does music distribution take?", answer: "After your demo is approved, your music is typically live on all major platforms within 5-7 business days. We recommend scheduling releases at least 2 weeks in advance for optimal playlist pitching opportunities." },
+                        { question: "What platforms does WBBT distribute to?", answer: "WBBT Records distributes to over 150 platforms worldwide, including Spotify, Apple Music, Amazon Music, Deezer, Tidal, YouTube Music, TikTok, Instagram/Facebook, Shazam, and many more across every continent." },
+                        { question: "Do I keep my royalties?", answer: "Absolutely. You retain ownership of your music and masters. WBBT Records collects royalties on your behalf and pays you your share (typically 70%) on a monthly basis with full transparent reporting." },
+                        { question: "What genres does WBBT Records accept?", answer: "We primarily focus on EDM, Dark Pop, Electronic, K-Pop, Phonk, and experimental music. However, we are open to all genres and encourage artists from all backgrounds to submit their demos." },
+                        { question: "Does WBBT offer music promotion services?", answer: "Yes! Beyond distribution, we offer professional PR, playlist pitching, social media campaigns, radio plugging, brand collaborations, and influencer partnerships through our WBBT PR division." }
+                    ])
+                ]}
             />
 
             <div className="pt-32 pb-20 px-6 md:px-12 max-w-[1600px] mx-auto min-h-screen">

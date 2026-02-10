@@ -460,7 +460,25 @@
     <url>
         <loc>https://www.wbbt.net/blog/music-business/virtual-concerts-the-new-live-experience</loc>
         <lastmod>2026-02-08</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/music-promotion/independent-artist-spotify-playbook-2026</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/music-promotion/grow-on-tiktok-musician-guide-2026</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/music-promotion/meta-ads-instagram-facebook-musicians-guide-2026</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 </urlset>

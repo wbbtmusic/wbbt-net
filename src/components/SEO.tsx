@@ -52,6 +52,17 @@ const SEO = ({
             {/* Robots */}
             <meta name="robots" content={`${noindex ? 'noindex' : 'index'}, ${nofollow ? 'nofollow' : 'follow'}`} />
 
+            {/* Geo & Language Targeting */}
+            <meta httpEquiv="content-language" content="en, tr" />
+            <meta name="geo.region" content="GB" />
+            <meta name="geo.region" content="TR" />
+            <meta name="geo.placename" content="London, United Kingdom" />
+
+            {/* Hreflang - Bilingual targeting */}
+            <link rel="alternate" hrefLang="en" href={canonicalUrl} />
+            <link rel="alternate" hrefLang="tr" href={canonicalUrl} />
+            <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+
             {/* Open Graph / Facebook */}
             <meta property="og:type" content={type} />
             <meta property="og:url" content={canonicalUrl} />

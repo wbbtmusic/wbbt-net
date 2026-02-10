@@ -33,6 +33,15 @@ const Footer = () => (
                         <li><a href="#" className="hover:text-purple-400 transition-colors">Jobs</a></li>
                     </ul>
                 </div>
+                <div>
+                    <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-gray-400">Resources</h4>
+                    <ul className="space-y-3 text-sm font-medium">
+                        <li><Link to="/services" className="hover:text-purple-400 transition-colors">Free Music Distribution</Link></li>
+                        <li><Link to="/submit" className="hover:text-purple-400 transition-colors">Submit Your Demo</Link></li>
+                        <li><Link to="/blog" className="hover:text-purple-400 transition-colors">Artist Resources & Tips</Link></li>
+                        <li><Link to="/services" className="hover:text-purple-400 transition-colors">Music PR & Promotion</Link></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-8 border-t border-white/10 text-xs text-gray-500 uppercase tracking-widest">
