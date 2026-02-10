@@ -12,8 +12,8 @@ const AboutPage = () => {
         <div className="pt-32 pb-20 px-6 max-w-[1200px] mx-auto text-white">
             <SEO
                 title="About WBBT Records | Independent Record Label London — Free Distribution"
-                description="Learn about WBBT Records, a UK-based independent record label founded by Burak Can Öğüt. Free music distribution, artist development, and marketing services. Bağımsız kayıt etiketi, Londra müzik etiketi."
-                keywords="About WBBT Records, Independent Record Label, Bağımsız Kayıt Etiketi, Londra Müzik Etiketi, Burak Can Öğüt, Free Distribution, UK Label"
+                description="Learn about WBBT Records, a UK-based independent record label founded by Burak Can Öğüt in 2020. Free music distribution, artist development, marketing, and PR services for independent artists worldwide. Bağımsız kayıt etiketi."
+                keywords="About WBBT Records, Independent Record Label UK, London Record Label, Burak Can Öğüt, Independent Music Label, Free Music Distribution, Artist Development, Music Label for Beginners, Bağımsız Kayıt Etiketi, Londra Müzik Etiketi"
                 schema={generateOrganizationSchema()}
             />
             <motion.div

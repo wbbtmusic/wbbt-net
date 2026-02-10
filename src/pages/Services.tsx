@@ -145,8 +145,8 @@ const ServicesPage = () => {
         <>
             <SEO
                 title="Music Distribution & Label Services | WBBT Records — Free for Artists"
-                description="Free music distribution to Spotify, Apple Music, Amazon & 150+ platforms. Professional PR, marketing strategy, and audio technology services for independent artists. Bedava müzik dağıtımı hizmeti."
-                keywords="Free Music Distribution, Music Distribution Service, Bedava Müzik Dağıtımı, Müzik Dağıtım Platformu, Music PR, Audio Plugins, Record Label Services, Sanatçı Geliştirme, WBBT Records"
+                description="Free music distribution to Spotify, Apple Music, Amazon, Deezer, Tidal & 150+ platforms. No upfront fees. Keep your rights. Professional PR, playlist pitching, radio plugging, copyright protection & royalty collection. Bedava müzik dağıtımı hizmeti."
+                keywords="Free Music Distribution, Music Distribution Service, How to Distribute Music, Upload Music to Spotify Free, Best Music Distributor, Music Aggregator, Playlist Pitching, Music PR Service, Royalty Collection, Copyright Protection, Content ID, Bedava Müzik Dağıtımı, Müzik Dağıtım Platformu, Sanatçı Geliştirme, WBBT Records"
                 schema={[
                     ...services.map(s => ({
                         "@context": "https://schema.org",

@@ -24,7 +24,7 @@ const ReleasesPage = () => {
             <SEO
                 title="New Music Releases | WBBT Records"
                 description="Stream the latest releases from WBBT Records. Fresh EDM, Pop, and Experimental tracks from our diverse roster of independent artists."
-                keywords="New Music, Music Releases, Spotify Releases, EDM Tracks, Pop Songs, WBBT Records Discography, Yeni Müzik, Taze Parçalar, Müzik Çıkışları"
+                keywords="New Music Releases 2026, Latest Music, Stream New Music, Spotify New Releases, EDM Releases, Electronic Music, Pop Music, Independent Music, WBBT Records Discography, Yeni Müzik, Taze Parçalar, Müzik Çıkışları"
                 schema={[generateOrganizationSchema(), releasesSchema]}
             />
             <header className="mb-24">

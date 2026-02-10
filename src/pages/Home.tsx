@@ -19,8 +19,8 @@ const HomePage = () => {
             <SEO
                 schema={[generateOrganizationSchema(), generateWebSiteSchema()]}
                 title="WBBT Records | Free Music Distribution & Independent Record Label"
-                description="UK-based independent record label offering free music distribution to Spotify, Apple Music & 150+ platforms. Artist development, marketing, PR & creative services. Bedava müzik dağıtımı, bağımsız kayıt etiketi."
-                keywords="WBBT Records, Free Music Distribution, Record Label, Independent Label, Bedava Müzik Dağıtımı, Kayıt Etiketi, Bağımsız Sanatçı, Müzik Dağıtım Platformu, Artist Development, EDM, Dark Pop, London"
+                description="Free music distribution to Spotify, Apple Music, Amazon & 150+ platforms. UK-based independent record label empowering artists with marketing, PR, royalty collection & creative services worldwide. Bedava müzik dağıtımı, bağımsız kayıt etiketi."
+                keywords="Free Music Distribution, Independent Record Label, Music Distribution Service, Distribute Music Free, Upload Music to Spotify, Get Music on Apple Music, Record Label for Independent Artists, Music Marketing, Artist Development, Royalty Collection, Music PR, Bedava Müzik Dağıtımı, Kayıt Etiketi, Bağımsız Sanatçı, Müzik Dağıtım Platformu, WBBT Records, EDM, Dark Pop, London"
             />
 
             {/* Semantic H1 for SEO (Visually removed but present for bots) */}

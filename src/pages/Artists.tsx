@@ -26,7 +26,7 @@ const ArtistsPage = () => {
             <SEO
                 title="Artists & Roster | WBBT Records"
                 description="Discover the WBBT Records artist roster. From EDM prodigies to Dark Pop visionaries, meet the talent defining the next generation of sound."
-                keywords="WBBT Records Artists, Music Artists, Record Label Roster, Electronic Musicians, Pop Artists, WBBT, Oyku, Hugola, Voxa, Türk Sanatçılar, EDM Müzisyen, Bağımsız Müzisyen"
+                keywords="WBBT Records Artists, Music Artists, Record Label Roster, Independent Musicians, Electronic Music Artists, EDM Artists, Pop Artists, WBBT, Oyku, Hugola, Voxa, Ava Aurora, Discover New Artists, Türk Sanatçılar, EDM Müzisyen, Bağımsız Müzisyen"
                 schema={[generateOrganizationSchema(), artistsListSchema]}
             />
             <header className="mb-24">

@@ -9,8 +9,8 @@ const SubmitPage = () => {
         <div className="pt-32 pb-20 px-6 max-w-[1600px] mx-auto min-h-screen flex flex-col items-center justify-center text-center">
             <SEO
                 title="Submit Your Demo | Free Music Distribution — WBBT Records"
-                description="Submit your demo to WBBT Records for free music distribution. We accept EDM, Dark Pop, and experimental music. Start your artist journey today. Demo gönder, bedava müzik dağıtımı."
-                keywords="Submit Demo, Demo Gönder, Free Music Distribution, Bedava Müzik Dağıtımı, Record Label Submission, Kayıt Etiketi Başvuru, Music Submission, WBBT Records Demo, Bağımsız Sanatçı"
+                description="Submit your demo to WBBT Records for free music distribution to Spotify, Apple Music & 150+ platforms. We sign EDM, Dark Pop, K-Pop & experimental artists. No upfront fees, keep your royalties. Demo gönder, bedava müzik dağıtımı."
+                keywords="Submit Demo to Record Label, How to Get Signed, Free Music Distribution, Send Demo to Label, Music Submission, Get Music on Spotify, Independent Artist, Record Deal, Demo Gönder, Bedava Müzik Dağıtımı, Kayıt Etiketi Başvuru, Bağımsız Sanatçı, WBBT Records"
                 schema={[
                     {
                         "@context": "https://schema.org",
