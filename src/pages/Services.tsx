@@ -35,17 +35,17 @@ const services: Service[] = [
     },
     {
         id: 'records',
-        name: 'WBBT Records',
-        tagline: 'Music Distribution',
+        name: 'Unlimited Free Releases',
+        tagline: 'Upload to Spotify • Keep 100% Royalties',
         icon: Music,
-        description: `Important: We are not just a distributor - we are a record label. When you sign with WBBT Records, you become part of a family that genuinely invests in your success.
-
-Your gateway to the world's biggest streaming platforms. WBBT Records delivers your music to over 150+ digital stores and streaming services including Spotify, Apple Music, Amazon Music, Deezer, Tidal, YouTube Music, and countless others across every continent.
-
-We don't just distribute - we optimize. Our team ensures your releases are properly formatted, tagged with rich metadata, and strategically scheduled for maximum impact. With our advanced analytics dashboard, you'll track your streams, revenue, and audience demographics in real-time.`,
-        features: ['150+ Streaming Platforms', 'Global Distribution', 'Royalty Collection', 'Analytics Dashboard', 'Release Scheduling', 'Metadata Optimization'],
+        description: `Stop paying to release your music. At WBBT Records, we believe releasing music should be free for everyone.
+        
+        We deliver your tracks to Spotify, Apple Music, TikTok, Instagram, and 150+ other stores worldwide. No hidden fees. No annual subscriptions.
+        
+        Unlike other "free" services that take weeks to approve your release, our team reviews and delivers your tracks in days. You keep 100% of your rights and we ensure your royalties are collected from every corner of the globe.`,
+        features: ['100% Free Uploads', 'Keep 100% Royalties', 'Delivery to 150+ Stores', 'Analytics Dashboard', 'Release in Days', 'Spotify Verification'],
         link: '/submit',
-        linkText: 'Submit Your Music'
+        linkText: 'Release Music Free'
     },
     {
         id: 'publishing',

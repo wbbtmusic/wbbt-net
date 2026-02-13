@@ -20,7 +20,7 @@ const HomePage = () => {
                 schema={[generateOrganizationSchema(), generateWebSiteSchema()]}
                 title="WBBT Records | Free Music Distribution & Independent Record Label"
                 description="Free music distribution to Spotify, Apple Music, Amazon & 150+ platforms. UK-based independent record label empowering artists with marketing, PR, royalty collection & creative services worldwide. Bedava müzik dağıtımı, bağımsız kayıt etiketi."
-                keywords="Free Music Distribution, Independent Record Label, Music Distribution Service, Distribute Music Free, Upload Music to Spotify, Get Music on Apple Music, Record Label for Independent Artists, Music Marketing, Artist Development, Royalty Collection, Music PR, Bedava Müzik Dağıtımı, Kayıt Etiketi, Bağımsız Sanatçı, Müzik Dağıtım Platformu, WBBT Records, EDM, Dark Pop, London"
+                keywords="WBBT Records, Free Music Distribution, Sell Your Music Online, Spotify Distribution Free, Apple Music for Artists, Unlimited Music Releases, Keep 100% Royalties, DistroKid Alternative, TuneCore Alternative, CD Baby Alternative, Best Music Distributor 2026, Get Vevo Channel, Vevo Video Upload, Official Artist Channel, Music Video Promotion, Vevo for Independent Artists, Music PR Agency, Radio Airplay, Spotify Playlist Pitching, Music Promotion Services, Indie Music Marketing, Bedava Müzik Dağıtımı, Spotify Şarkı Yükleme, Vevo Kanalı Açma, Radio PR, Independent Record Label, London Record Label, Burak Can Öğüt"
             />
 
             {/* Semantic H1 for SEO (Visually removed but present for bots) */}
@@ -141,6 +141,12 @@ const HomePage = () => {
                 <h2 className="font-display text-6xl md:text-8xl font-black mb-8 tracking-tighter uppercase opacity-90 relative text-white">Send Your<br />Demo</h2>
                 <p className="text-gray-400 mb-10 max-w-xl mx-auto text-lg font-light relative">
                     We are always listening. If you have the sound of the future, we want to hear it.
+                    <br /><br />
+                    <span className="text-xs opacity-50">
+                        Maximize your reach with our <strong>Music PR Agency</strong> services, get featured on <strong>Vevo</strong>,
+                        and <strong>Sell Your Music Online</strong> with a partner that cares.
+                        Better than a standard <strong>DistroKid Alternative</strong>.
+                    </span>
                 </p>
                 <a
                     href="https://app.wbbt.net"

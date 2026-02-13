@@ -34,10 +34,10 @@ const SEO = ({
     // Fallback to static data if props aren't provided
     const pageSEO = !title ? (seoData as PageSEO[]).find(item => item.url === canonicalUrl || item.url === `${baseUrl}${rawPath}`) : null;
 
-    const finalTitle = title || pageSEO?.seo.title || "WBBT Records | UK Independent Record Label & Distributor";
-    const finalDesc = description || pageSEO?.seo.description || "WBBT Records is a premier UK-based independent record label empowering artists with distribution, marketing, and creative services. Home of WBBT, Oyku, and future-forward music.";
+    const finalTitle = title || pageSEO?.seo.title || "WBBT Records | Unlimited Free Music Releases & Label Services";
+    const finalDesc = description || pageSEO?.seo.description || "Upload your music to Spotify, Apple Music & TikTok for free. Keep 100% of your royalties. WBBT Records is the next-gen record label offering free release services, global radio pitching, and artist development.";
     const finalImage = image || "https://static.wixstatic.com/media/27c1cc_ddcac3da9bea4394b990d38b83009142~mv2.jpg";
-    const finalKeywords = keywords || "WBBT Records, Record Label UK, Independent Label, Music Distribution, Electronic Music, Dark Pop, Artist Development";
+    const finalKeywords = keywords || "Free Music Distribution, Bedava Müzik Dağıtımı, Unlimited Free Releases, Upload Music to Spotify, Keep 100% Royalties, Vevo Channel Free, Radio PR, Independent Record Label, Music Distribution Service, Spotify Gelir Hesaplama, Unchained Music Review, Music Marketing, Artist Development, Royalty Collection, Kayıt Etiketi, Müzik Dağıtım Platformu, EDM, Dark Pop, London Record Label, Burak Can Öğüt, Free Vevo Distribution, Get Vevo Channel for Free, Best Free Music Distributor, Fast Music Distribution, RouteNote Alternative, Amuse Alternative, DistroKid Alternative";
 
     const schemas = Array.isArray(schema) ? schema : schema ? [schema] : [];
 

@@ -57,12 +57,15 @@ const SubmitPage = () => {
                     </div>
                 </div>
 
-                <h1 className="font-display text-5xl md:text-7xl font-black mb-6 text-white tracking-tighter leading-tight">
-                    NEXT GEN <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">RECORD LABEL</span>
+                <h1 className="font-display text-5xl md:text-7xl font-black mb-6 text-white tracking-tighter leading-tight relative">
+                    SUBMIT MUSIC TO <br className="hidden md:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">RECORD LABELS</span>
                 </h1>
 
                 <p className="text-2xl text-gray-300 font-light mb-12 max-w-2xl">
-                    We are <span className="text-white font-bold">NOT</span> a distributor. We are a <span className="text-purple-400 font-bold">Record Label</span>.
+                    Looking for a <strong>Record Deal in 2026</strong>? We are <span className="text-white font-bold">NOT</span> just a distributor.
+                    <br />
+                    We are a <span className="text-purple-400 font-bold">Record Label Looking for Artists</span> like you.
                     <br />
                     We don't just upload your music. We build your career.
                 </p>

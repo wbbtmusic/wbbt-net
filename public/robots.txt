@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /login
+Disallow: /dashboard
+Disallow: /register
+Disallow: /api/
 
 User-agent: GPTBot
 Allow: /
@@ -8,12 +13,6 @@ User-agent: CCBot
 Allow: /
 
 User-agent: Google-Extended
-Allow: /
-
-User-agent: Anthropic-ai
-Allow: /
-
-User-agent: FacebookBot
 Allow: /
 
 Sitemap: https://www.wbbt.net/sitemap.xml
