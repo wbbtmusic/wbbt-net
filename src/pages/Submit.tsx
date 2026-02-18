@@ -59,7 +59,7 @@ const SubmitPage = () => {
 
                 <h1 className="font-display text-5xl md:text-7xl font-black mb-6 text-white tracking-tighter leading-tight relative">
                     SUBMIT MUSIC TO <br className="hidden md:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">RECORD LABELS</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">RECORD LABEL</span>
                 </h1>
 
                 <p className="text-2xl text-gray-300 font-light mb-12 max-w-2xl">

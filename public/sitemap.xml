@@ -3,9 +3,33 @@
     
     <url>
         <loc>https://www.wbbt.net/</loc>
-        <lastmod>2026-02-08</lastmod>
+        <lastmod>2026-02-18</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/spotify-algorithm-decoded-2026-playbook</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/music-copyright-licensing-complete-guide-2026</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/build-music-brand-from-zero-2026</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.wbbt.net/blog/top-10-free-vst-plugins-2026</loc>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.wbbt.net/artists</loc>

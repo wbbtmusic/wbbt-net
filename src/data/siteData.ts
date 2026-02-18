@@ -140,6 +140,7 @@ export const ARTISTS: Artist[] = [
 // RELEASES DATA - En güncel liste (db.json'dan)
 // =============================================================================
 export const RELEASES: Release[] = [
+    { id: 1771417473508, artist: "HUGOLA", title: "Trust In The Dust", cover: "/trust-in-the-dust-cover.jpg", spotify: "https://open.spotify.com/intl-tr/track/0wJkLbYOhwiKmVaFy7JuBm?si=5deb5a6899bd46a0" },
     { id: 1770211945948, artist: "WBBT", title: "Do It Right", cover: "/do-it-right-cover.jpg", spotify: "https://open.spotify.com/intl-tr/track/4z5PAQ9fDtaZfM0d9GmGXL?si=a159ee5cc17b4246" },
     { id: 1, artist: "Oyku", title: "Above", cover: "https://static.wixstatic.com/media/27c1cc_3e1a878e9b434dcda2de94272e233893~mv2.webp", spotify: "https://artists.landr.com/057914012902" },
     { id: 2, artist: "Ava Aurora X WBBT", title: "Burn For You", cover: "https://static.wixstatic.com/media/27c1cc_e8bf3bec52634748a63057e32ae1a4dd~mv2.webp", spotify: "https://artists.landr.com/057829616833" },
