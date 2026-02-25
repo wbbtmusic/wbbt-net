@@ -36,14 +36,14 @@ const services: Service[] = [
     {
         id: 'records',
         name: 'Unlimited Free Releases',
-        tagline: 'Upload to Spotify • Keep 100% Royalties',
+        tagline: 'Upload to Spotify • Keep 70% Royalties',
         icon: Music,
         description: `Stop paying to release your music. At WBBT Records, we believe releasing music should be free for everyone.
         
         We deliver your tracks to Spotify, Apple Music, TikTok, Instagram, and 150+ other stores worldwide. No hidden fees. No annual subscriptions.
         
-        Unlike other "free" services that take weeks to approve your release, our team reviews and delivers your tracks in days. You keep 100% of your rights and we ensure your royalties are collected from every corner of the globe.`,
-        features: ['100% Free Uploads', 'Keep 100% Royalties', 'Delivery to 150+ Stores', 'Analytics Dashboard', 'Release in Days', 'Spotify Verification'],
+        Unlike other "free" services that take weeks to approve your release, our team reviews and delivers your tracks in days. You keep 100% of your rights, keep 70% of your royalties, and we ensure your royalties are collected from every corner of the globe.`,
+        features: ['100% Free Uploads', 'Keep 70% Royalties', 'Delivery to 150+ Stores', 'Analytics Dashboard', 'Release in Days', 'Spotify Verification'],
         link: '/submit',
         linkText: 'Release Music Free'
     },

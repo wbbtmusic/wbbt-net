@@ -73,8 +73,26 @@ import { post78 } from './blog/post-78';
 import { post79 } from './blog/post-79';
 import { post80 } from './blog/post-80';
 import { post81 } from './blog/post-81';
+import { post82 } from './blog/post-82';
+import { post83 } from './blog/post-83';
+import { post84 } from './blog/post-84';
+import { post85 } from './blog/post-85';
+import { post86 } from './blog/post-86';
+import { post87 } from './blog/post-87';
+import { post88 } from './blog/post-88';
+import { post89 } from './blog/post-89';
+import { post90 } from './blog/post-90';
 
 export const BLOG_POSTS: BlogPost[] = [
+    post90,
+    post89,
+    post88,
+    post87,
+    post86,
+    post85,
+    post84,
+    post83,
+    post82,
     post81,
     post80,
     post79,

@@ -12,6 +12,22 @@ const BlogDetail = () => {
     const { slug } = useParams();
     const navigate = useNavigate();
     const { blogPosts } = useData();
+    const [langMode, setLangMode] = React.useState<'tr' | 'en'>('tr');
+
+    React.useEffect(() => {
+        // Automatically default to TR, switch to EN if outside of TR
+        fetch('https://ipapi.co/json/')
+            .then(res => res.json())
+            .then(data => {
+                if (data.country_code && data.country_code !== 'TR') {
+                    setLangMode('en');
+                }
+            })
+            .catch(error => {
+                console.warn('Geolocation fetch error, defaulting to TR', error);
+                setLangMode('tr');
+            });
+    }, []);
 
     const post = blogPosts.find(p => p.slug === slug);
 
@@ -94,7 +110,7 @@ const BlogDetail = () => {
                 {/* Content Container - Narrower for Editorial Feel */}
                 <article className="max-w-[800px] mx-auto px-6 py-20 text-gray-300 leading-relaxed text-lg lg:text-xl relative z-20">
 
-                    {/* Intro / Hook (First paragraph styling) */}
+                    {/* Intro / Hook (First paragraph styling) & Global Language Toggle */}
                     <style>{`
                     .blog-content > p:first-of-type {
                         font-size: 1.35em;
@@ -106,10 +122,13 @@ const BlogDetail = () => {
                         padding-left: 2rem;
                         background: linear-gradient(to right, rgba(192, 132, 252, 0.05), transparent);
                     }
+                    /* Language Display Logic */
+                    .mode-tr .lang-en { display: none !important; }
+                    .mode-en .lang-tr { display: none !important; }
                 `}</style>
 
                     {/* Main Content Render */}
-                    <div className="w-full overflow-hidden break-words blog-content">
+                    <div className={`w-full overflow-hidden break-words blog-content mode-${langMode}`}>
                         <div
                             className="prose prose-invert prose-purple prose-lg max-w-none w-full
                         [&>p]:mb-8 [&>p]:leading-loose
@@ -195,7 +214,7 @@ const BlogDetail = () => {
                 </div>
 
             </motion.div>
-        </div>
+        </div >
     );
 };
 
