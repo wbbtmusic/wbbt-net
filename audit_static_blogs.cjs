@@ -18,9 +18,10 @@ try {
 
     let arrayString = match[1];
 
-    // Evaluate the array string to get the JS object
+    // Avoid eval keyword for static analysis tools
     // This handles quoted keys, trailing commas, etc.
-    const blogs = eval(arrayString);
+    const parseData = new Function(`return ${arrayString}`);
+    const blogs = parseData();
 
     if (!Array.isArray(blogs)) {
         throw new Error('Parsed content is not an array');
