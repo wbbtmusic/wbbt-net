@@ -252,8 +252,8 @@ const BlogEditor: React.FC<BlogEditorProps> = ({ initialData, onSave, onCancel, 
                                 [&>a]:text-purple-400 [&>a]:underline [&>a]:decoration-purple-500/30 [&>a]:underline-offset-4 hover:[&>a]:decoration-purple-400"
                                 dangerouslySetInnerHTML={{
                                     __html: DOMPurify.sanitize(content, {
-                                        ADD_TAGS: ['iframe', 'style', 'script', 'div', 'span'],
-                                        ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling', 'target', 'class', 'src', 'width', 'height', 'id', 'name', 'title', 'style']
+                                        ADD_TAGS: ['div', 'span'],
+                                        ADD_ATTR: ['target', 'class', 'src', 'width', 'height', 'id', 'name', 'title', 'style', 'alt', 'loading']
                                     })
                                 }}
                             />

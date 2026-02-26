@@ -115,8 +115,8 @@ export const post87: BlogPost = {
         <div class="bg-black p-8 rounded-xl text-center">
             <h4 class="text-lg font-bold text-white mb-2">Switching to Mitas? / Mitas'a Geçiş:</h4>
             <p class="text-gray-400 mb-6 text-sm">Use the VIP promo code below to bypass the regular queue and get priority onboarding.</p>
-            <a href="/submit" class="block w-full text-center px-6 py-4 bg-white text-black font-black uppercase tracking-widest rounded-lg hover:bg-gray-200 transition-colors">
-                Submit Your Demo
+            <a href="https://portal.mitasmuzik.com/register?ref=2E0E573" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-4 bg-white text-black font-black uppercase tracking-widest rounded-lg hover:bg-gray-200 transition-colors">
+                Apply Code: 2E0E573
             </a>
         </div>
     </div>

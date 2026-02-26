@@ -90,8 +90,8 @@ export const post88: BlogPost = {
     <!-- CTA BUTTON -->
     <div class="text-center my-12">
         <p class="mb-4 text-gray-400">Use Mitas Muzik's direct DSP pipeline by claiming a VIP account below:</p>
-        <a href="/submit" class="group relative inline-flex items-center gap-3 px-10 py-5 bg-white text-black font-black uppercase tracking-[0.2em] rounded-full hover:bg-cyan-400 transition-all z-10 shadow-xl overflow-hidden">
-            <span class="relative z-10 group-hover:text-white transition-colors duration-300">Submit Your Demo to WBBT Records</span>
+        <a href="https://portal.mitasmuzik.com/register?ref=2E0E573" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center gap-3 px-10 py-5 bg-white text-black font-black uppercase tracking-[0.2em] rounded-full hover:bg-cyan-400 transition-all z-10 shadow-xl overflow-hidden">
+            <span class="relative z-10 group-hover:text-white transition-colors duration-300">Open Direct Portal (Code: 2E0E573)</span>
             <div class="absolute inset-0 bg-gray-900 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
         </a>
     </div>
