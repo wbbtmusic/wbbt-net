@@ -15,18 +15,14 @@ const BlogDetail = () => {
     const [langMode, setLangMode] = React.useState<'tr' | 'en'>('tr');
 
     React.useEffect(() => {
-        // Automatically default to TR, switch to EN if outside of TR
-        fetch('https://ipapi.co/json/')
-            .then(res => res.json())
-            .then(data => {
-                if (data.country_code && data.country_code !== 'TR') {
-                    setLangMode('en');
-                }
-            })
-            .catch(error => {
-                console.warn('Geolocation fetch error, defaulting to TR', error);
-                setLangMode('tr');
-            });
+        // Default to English for international audience
+        // Geolocation removed for Google Ads compliance
+        const browserLang = navigator.language || '';
+        if (browserLang.startsWith('tr')) {
+            setLangMode('tr');
+        } else {
+            setLangMode('en');
+        }
     }, []);
 
     const post = blogPosts.find(p => p.slug === slug);
@@ -144,8 +140,8 @@ const BlogDetail = () => {
                         [&>hr]:border-white/10 [&>hr]:my-20"
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(post.content, {
-                                    ADD_TAGS: ['iframe', 'style', 'script', 'link', 'meta', 'div', 'span', 'applet', 'object'],
-                                    ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling', 'target', 'class', 'src', 'width', 'height', 'id', 'name', 'title', 'style', 'autoplay', 'loop', 'muted', 'playsinline', 'class']
+                                    ADD_TAGS: ['div', 'span'],
+                                    ADD_ATTR: ['target', 'class', 'src', 'width', 'height', 'id', 'name', 'title', 'style', 'alt', 'loading']
                                 })
                             }}
                         />
