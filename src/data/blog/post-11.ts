@@ -127,7 +127,7 @@ export const post11: BlogPost = {
                 <p class="mb-4">My new track "Neon Death" drops next Friday. It's aggressive <strong>Industrial Techno</strong> inspired by the <em>John Wick</em> soundtrack.</p>
                 <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 mb-4">
                      <p class="font-bold text-white mb-2">Private Listen:</p>
-                     <a href="#" class="text-blue-400 hover:underline">SoundCloud Link (Private)</a>
+                     <span class="text-blue-400">[Your Private SoundCloud Link Here]</span>
                 </div>
                 <p class="mb-4"><strong>The Story:</strong> I recorded this using samples from a defunct Soviet radio station.</p>
                 <p class="mb-4">Let me know if you'd like the WAV for a premiere!</p>

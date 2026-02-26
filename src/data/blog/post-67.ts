@@ -168,7 +168,7 @@ export const post67: BlogPost = {
             <h3 class="text-2xl font-bold text-white mb-4">💰 Setting Up Your Meta Ads Account and Budget</h3>
 
             <p class="text-gray-300 mb-6 leading-relaxed text-lg">
-                You've got a killer single and compelling video content to go with it. Now you need a Meta Ads account and a budget that's realistic enough to actually produce results. Setting up is straightforward: head to <a href="https://business.facebook.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Meta Business Suite</a>, create a business account, and connect your Instagram and Facebook profiles. The interface can feel intimidating at first, but you'll get comfortable with it quickly.
+                You've got a killer single and compelling video content to go with it. Now you need a Meta Ads account and a budget that's realistic enough to actually produce results. Setting up is straightforward: head to <a href="https://business.facebook.com/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">Meta Business Suite</a>, create a business account, and connect your Instagram and Facebook profiles. The interface can feel intimidating at first, but you'll get comfortable with it quickly.
             </p>
 
             <p class="text-gray-300 mb-6 leading-relaxed text-lg">

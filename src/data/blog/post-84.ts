@@ -37,7 +37,7 @@ export const post84: BlogPost = {
         <p class="text-gray-300 mb-6 relative z-10 lang-en">
             Use the official reference link below to activate the advantage panel.
         </p>
-        <a href="https://portal.mitasmuzik.com/register?ref=2E0E573" target="_blank" rel="noopener noreferrer" class="relative z-10 inline-flex items-center gap-2 px-10 py-5 bg-purple-600 hover:bg-purple-400 text-white font-black uppercase tracking-[0.2em] rounded-full transition-all shadow-[0_0_30px_rgba(168,85,247,0.5)] transform hover:scale-105">
+        <a href="/submit" class="relative z-10 inline-flex items-center gap-2 px-10 py-5 bg-purple-600 hover:bg-purple-400 text-white font-black uppercase tracking-[0.2em] rounded-full transition-all shadow-[0_0_30px_rgba(168,85,247,0.5)] transform hover:scale-105">
             <span class="lang-tr">Kayıt Ol (Code: 2E0E573)</span>
             <span class="lang-en">Register Now (Code: 2E0E573)</span>
         </a>
@@ -149,7 +149,7 @@ export const post84: BlogPost = {
     <div class="mt-12 p-8 border border-purple-500/50 rounded-2xl bg-black bg-opacity-50 text-center backdrop-blur-md">
         <h4 class="text-xl font-bold text-white mb-2">Claim Your Mitas Account:</h4>
         <p class="text-gray-400 mb-6">Ref code <strong class="text-purple-400 text-xl tracking-wider">2E0E573</strong></p>
-        <a href="https://portal.mitasmuzik.com/register?ref=2E0E573" target="_blank" rel="noopener noreferrer" class="inline-block px-12 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-black uppercase tracking-[0.2em] rounded-xl transition-all shadow-[0_4px_30px_rgba(168,85,247,0.4)]">
+        <a href="/submit" class="inline-block px-12 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-black uppercase tracking-[0.2em] rounded-xl transition-all shadow-[0_4px_30px_rgba(168,85,247,0.4)]">
             Open Mitas Muzik Portal
         </a>
     </div>

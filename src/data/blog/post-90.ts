@@ -70,7 +70,7 @@ export const post90: BlogPost = {
                 Take control of your catalogue. Use Mitas Muzik's direct distribution network, keep 100% of your earnings, and get priority support.
             </p>
             <div class="inline-block p-1 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 rounded-full">
-                <a href="https://portal.mitasmuzik.com/register?ref=2E0E573" target="_blank" rel="noopener noreferrer" class="block bg-black hover:bg-transparent text-white font-black uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300">
+                <a href="/submit" class="block bg-black hover:bg-transparent text-white font-black uppercase tracking-[0.2em] px-10 py-5 rounded-full transition-all duration-300">
                     Get Mitas VIP Access (2E0E573)
                 </a>
             </div>

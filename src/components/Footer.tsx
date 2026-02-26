@@ -9,8 +9,8 @@ const Footer = () => (
             <div>
                 <h2 className="font-display font-black text-4xl mb-6">WBBT<br />RECORDS</h2>
                 <div className="flex gap-4">
-                    <a href="https://instagram.com" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Instagram size={18} /></a>
-                    <a href="https://twitter.com" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Twitter size={18} /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Instagram size={18} /></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Twitter size={18} /></a>
                     <a href="mailto:support@wbbt.net" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Mail size={18} /></a>
                 </div>
             </div>
@@ -30,7 +30,7 @@ const Footer = () => (
                         <li><Link to="/about" className="hover:text-purple-400 transition-colors">About Us</Link></li>
                         <li><Link to="/submit" className="hover:text-purple-400 transition-colors">Submit Demo</Link></li>
                         <li><a href="mailto:contact@wbbt.net" className="hover:text-purple-400 transition-colors">Contact</a></li>
-                        <li><a href="#" className="hover:text-purple-400 transition-colors">Jobs</a></li>
+                        <li><Link to="/about" className="hover:text-purple-400 transition-colors">Careers</Link></li>
                     </ul>
                 </div>
                 <div>

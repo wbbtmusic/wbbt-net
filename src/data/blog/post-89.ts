@@ -106,7 +106,7 @@ export const post89: BlogPost = {
             Skip the generic distributors who take 20% of your TikTok revenue. Keep 100% of your rights and earnings with Mitas Muzik's Direct Delivery pipeline.
         </p>
         
-        <a href="https://portal.mitasmuzik.com/register?ref=2E0E573" target="_blank" rel="noopener noreferrer" class="relative z-10 inline-block px-12 py-5 bg-white text-black font-black uppercase tracking-[0.3em] text-sm rounded-full hover:bg-gray-200 hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,255,0.3)]">
+        <a href="/submit" class="relative z-10 inline-block px-12 py-5 bg-white text-black font-black uppercase tracking-[0.3em] text-sm rounded-full hover:bg-gray-200 hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,255,0.3)]">
             Create Mitas Account (Code: 2E0E573)
         </a>
     </div>
