@@ -133,6 +133,22 @@ export const ARTISTS: Artist[] = [
         },
         topTracks: [],
         comingSoon: true
+    },
+    {
+        id: "brokeplus",
+        name: "brokeplus",
+        role: "Hip-Hop / Meme Rap Artist",
+        realName: "Leo Alexander",
+        image: "/images/brokeplus-pp.jpg",
+        banner: "/images/brokeplus-cover.jpg",
+        bio: "Leo Alexander (21), who joined WBBT Records in 2026 under the stage name 'brokeplus', is a rising male artist known for his unique style. Drawing heavy inspiration from bbno$, his music blends catchy hip-hop and pop elements with a strong, humorous twist. He creates energetic tracks that playfully mock current internet memes and popular culture, bringing a fresh, comic, and highly entertaining vibe to the modern music scene.",
+        email: "support@wbbt.net",
+        links: {
+            spotify: "https://open.spotify.com/intl-tr/artist/7JUja5OMAAfIDKkDuimZNd?si=cO3N1rFORVWgDp7_tcD4JQ",
+            youtube: "https://www.youtube.com/results?search_query=brokeplus",
+            apple: "https://music.apple.com/us/search?term=brokeplus"
+        },
+        topTracks: ["Lo Siento"]
     }
 ];
 
@@ -140,6 +156,7 @@ export const ARTISTS: Artist[] = [
 // RELEASES DATA - En güncel liste (db.json'dan)
 // =============================================================================
 export const RELEASES: Release[] = [
+    { id: 1771417473509, artist: "brokeplus", title: "Lo Siento", cover: "/images/lo-siento.jpg", spotify: "https://open.spotify.com/intl-tr/track/2rmkTrFgsywITnb3J9QT3S?si=5767c9919f40418b" },
     { id: 1771417473508, artist: "HUGOLA", title: "Trust In The Dust", cover: "/trust-in-the-dust-cover.jpg", spotify: "https://open.spotify.com/intl-tr/track/0wJkLbYOhwiKmVaFy7JuBm?si=5deb5a6899bd46a0" },
     { id: 1770211945948, artist: "WBBT", title: "Do It Right", cover: "/do-it-right-cover.jpg", spotify: "https://open.spotify.com/intl-tr/track/4z5PAQ9fDtaZfM0d9GmGXL?si=a159ee5cc17b4246" },
     { id: 1, artist: "Oyku", title: "Above", cover: "https://static.wixstatic.com/media/27c1cc_3e1a878e9b434dcda2de94272e233893~mv2.webp", spotify: "https://artists.landr.com/057914012902" },

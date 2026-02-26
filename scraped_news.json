@@ -1,0 +1,14 @@
+{
+  "MusicRadar": "Error: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://www.musicradar.com/news\", waiting until \"load\"\n",
+  "EDM.com": [
+    "Performing security verification",
+    "Verification successful. Waiting for edm.com to respond"
+  ],
+  "DistroKid": [
+    "DistroKid News",
+    "Introducing the DistroKid iPhone App",
+    "For v1, we’ve added the most popular features: Upload music, edit releases, add lyrics, alerts when you have new money, and more.",
+    "DistroKid made 21 different (free 🎉) services, beyond distribution, that we hope you love.",
+    "DistroKid is known for being the best way for musicians to get music into streaming services (and get 100% of earnings). But there’s more."
+  ]
+}

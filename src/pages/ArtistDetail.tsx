@@ -111,7 +111,7 @@ const ArtistDetail = () => {
                             {Object.entries(artist.links).map(([platform, url]) => (
                                 <a
                                     key={platform}
-                                    href={url}
+                                    href={url as string}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-3 md:p-4 border border-white/20 rounded-full hover:bg-white hover:text-black hover:scale-110 transition-all duration-300 text-white"
@@ -124,12 +124,15 @@ const ArtistDetail = () => {
                                     {platform === 'soundcloud' && <Globe size={20} />}
                                 </a>
                             ))}
-                            <a
-                                href={`mailto:${artist.email}`}
-                                className="p-3 md:p-4 border border-white/20 rounded-full hover:bg-purple-600 hover:border-purple-600 hover:scale-110 transition-all duration-300 text-white"
-                            >
-                                <Mail size={20} />
-                            </a>
+                            {artist.email && (
+                                <a
+                                    href={`mailto:${artist.email}`}
+                                    className="px-6 py-3 md:py-4 border border-white/20 rounded-full hover:bg-purple-600 hover:border-purple-600 hover:scale-105 transition-all duration-300 text-white flex items-center gap-3 font-mono text-sm"
+                                >
+                                    <Mail size={18} />
+                                    <span>{artist.email}</span>
+                                </a>
+                            )}
                         </div>
                     </motion.div>
                 </div>
