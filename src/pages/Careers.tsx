@@ -294,7 +294,7 @@ const Careers = () => {
                             We're always looking for exceptional talent. Send us your CV and tell us how you can contribute to WBBT Records.
                         </p>
                         <a
-                            href="mailto:careers@wbbt.net"
+                            href="mailto:support@wbbt.net"
                             className="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-wider text-sm rounded-full hover:bg-white hover:text-black transition-all duration-300 relative z-10"
                         >
                             Get in Touch
