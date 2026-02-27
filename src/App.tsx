@@ -25,6 +25,7 @@ import SubmitPage from './pages/Submit';
 import ServicesPage from './pages/Services';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import CareersPage from './pages/Careers';
 
 const App = () => {
     const location = useLocation();
@@ -105,6 +106,7 @@ const App = () => {
                             <Route path="/services" element={<ServicesPage />} />
                             <Route path="/privacy" element={<PrivacyPolicy />} />
                             <Route path="/terms" element={<TermsOfService />} />
+                            <Route path="/careers" element={<CareersPage />} />
                             <Route path="*" element={<HomePage />} />
                         </Routes>
                         <Footer />
