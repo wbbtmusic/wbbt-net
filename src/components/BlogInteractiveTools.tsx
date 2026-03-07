@@ -147,7 +147,7 @@ const CalculatorPromo = () => {
             <DollarSign className="absolute -top-10 -right-10 text-green-500/10 w-64 h-64" />
             <h3 className="text-3xl font-black text-white mb-4 relative z-10">Stop Guessing Your Royalties</h3>
             <p className="text-gray-300 mb-8 max-w-xl mx-auto relative z-10">Use our Global Spotify Royalty Calculator to see exact 2026 payout rates for Tier 1, Tier 2, and Emerging Markets.</p>
-            <Link to="/spotify-gelir-hesaplama" className="inline-block relative z-10 bg-green-500 text-black font-black px-8 py-4 rounded-full uppercase tracking-wider text-sm hover:scale-105 transition-transform shadow-[0_0_30px_rgba(34,197,94,0.3)]">
+            <Link to="/spotify-royalty-calculator" className="inline-block relative z-10 bg-green-500 text-black font-black px-8 py-4 rounded-full uppercase tracking-wider text-sm hover:scale-105 transition-transform shadow-[0_0_30px_rgba(34,197,94,0.3)]">
                 Launch Calculator Demo
             </Link>
         </div>

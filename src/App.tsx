@@ -112,6 +112,7 @@ const App = () => {
                                 <Route path="/terms" element={<TermsOfService />} />
                                 <Route path="/careers" element={<CareersPage />} />
                                 <Route path="/spotify-gelir-hesaplama" element={<Calculator />} />
+                                <Route path="/spotify-royalty-calculator" element={<Calculator />} />
                                 {/* Catch-all route to NotFound safely to prevent Soft 404s */}
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
