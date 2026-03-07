@@ -5,9 +5,9 @@ export const post100: BlogPost = {
     "title": "The Ultimate 2026 Guide to Free Music Distribution: Keep 100% Royalties",
     "slug": "best-free-music-distribution-and-record-labels-2026",
     "category": "Music Distribution",
-    "date": "Oct 25, 2025",
+    "date": "Mar 7, 2026",
     "author": "Burak Can Öğüt",
-    "image": "/images/blog/blog-100.webp",
+    "image": "/images/blog/blog-100.png",
     "metaDesc": "Stop paying fees. Discover the best free music distributors and record labels in 2026. Keep 100% of your Spotify and Apple Music royalties. Learn how WBBT Records is changing the game.",
     "tags": "free music distribution, best free music distributor, free record labels, spotify gelir hesaplama, keep 100 royalties, tunecore alternative, distrokid alternative",
     "content": `

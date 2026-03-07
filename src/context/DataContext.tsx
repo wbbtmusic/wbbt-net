@@ -30,8 +30,8 @@ export const DataProvider = ({ children }: { children: React.ReactNode }) => {
         <DataContext.Provider value={{
             artists: ARTISTS,
             releases: RELEASES,
-            // Sort blog posts by date (newest first)
-            blogPosts: [...BLOG_POSTS].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
+            // Sort blog posts by ID (newest id first) instead of date parsing to avoid NaN errors on mixed languages
+            blogPosts: [...BLOG_POSTS].sort((a, b) => b.id - a.id),
             aboutContent: ABOUT_CONTENT,
         }}>
             {children}

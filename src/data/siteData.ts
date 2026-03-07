@@ -156,6 +156,7 @@ export const ARTISTS: Artist[] = [
 // RELEASES DATA - En güncel liste (db.json'dan)
 // =============================================================================
 export const RELEASES: Release[] = [
+    { id: 1772618999999, artist: "HUGOLA", title: "Maybe Now", cover: "/images/maybe-now-cover-gemini.png", spotify: "https://open.spotify.com/intl-tr/album/7uNAWWGx4fOpBUwjIKL9Cs?si=EVPs0RKyQ9eUsiVNs5CAOw" },
     { id: 1772517473510, artist: "HUGOLA", title: "Win Sin", cover: "/images/win-sin-cover.jpg", spotify: "https://open.spotify.com/intl-tr/track/5zIW45MRqbYOjCPTgb6Kx7?si=ed7e025257f94d94" },
     { id: 1771417473509, artist: "brokeplus", title: "Lo Siento", cover: "/images/lo-siento.jpg", spotify: "https://open.spotify.com/intl-tr/track/2rmkTrFgsywITnb3J9QT3S?si=5767c9919f40418b" },
     { id: 1771417473508, artist: "HUGOLA", title: "Trust In The Dust", cover: "/trust-in-the-dust-cover.jpg", spotify: "https://open.spotify.com/intl-tr/track/0wJkLbYOhwiKmVaFy7JuBm?si=5deb5a6899bd46a0" },

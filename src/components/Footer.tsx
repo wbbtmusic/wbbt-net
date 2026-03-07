@@ -9,8 +9,7 @@ const Footer = () => (
             <div>
                 <h2 className="font-display font-black text-4xl mb-6">WBBT<br />RECORDS</h2>
                 <div className="flex gap-4">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Instagram size={18} /></a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Twitter size={18} /></a>
+                    <a href="https://instagram.com/wbbtmusic" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Instagram size={18} /></a>
                     <a href="mailto:support@wbbt.net" className="p-3 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors"><Mail size={18} /></a>
                 </div>
             </div>

@@ -14,20 +14,21 @@ import SmoothScroll from './components/SmoothScroll';
 import { InteractiveLiquid, MorphingParticleText, InteractiveStars } from './components/ThreeBackground';
 // Pages
 import HomePage from './pages/Home';
-import ArtistsPage from './pages/Artists';
-import ReleasesPage from './pages/Releases';
-import BlogPage from './pages/Blog';
-// Admin panel removed - site is now fully static
-import ArtistDetail from './pages/ArtistDetail';
-import AboutPage from './pages/About';
-import BlogDetail from './pages/BlogDetail';
-import SubmitPage from './pages/Submit';
-import ServicesPage from './pages/Services';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
-import CareersPage from './pages/Careers';
-import NotFound from './pages/NotFound';
-import Calculator from './pages/Calculator';
+
+// Lazy-loaded Pages strategically for Performance (Code Splitting)
+const ArtistsPage = React.lazy(() => import('./pages/Artists'));
+const ReleasesPage = React.lazy(() => import('./pages/Releases'));
+const BlogPage = React.lazy(() => import('./pages/Blog'));
+const ArtistDetail = React.lazy(() => import('./pages/ArtistDetail'));
+const AboutPage = React.lazy(() => import('./pages/About'));
+const BlogDetail = React.lazy(() => import('./pages/BlogDetail'));
+const SubmitPage = React.lazy(() => import('./pages/Submit'));
+const ServicesPage = React.lazy(() => import('./pages/Services'));
+const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = React.lazy(() => import('./pages/TermsOfService'));
+const CareersPage = React.lazy(() => import('./pages/Careers'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+const Calculator = React.lazy(() => import('./pages/Calculator'));
 
 const App = () => {
     const location = useLocation();
@@ -96,23 +97,25 @@ const App = () => {
                         className="relative z-10 scroll-content"
                     >
                         <Navbar />
-                        <Routes>
-                            <Route path="/" element={<HomePage />} />
-                            <Route path="/artists" element={<ArtistsPage />} />
-                            <Route path="/artists/:id" element={<ArtistDetail />} />
-                            <Route path="/releases" element={<ReleasesPage />} />
-                            <Route path="/submit" element={<SubmitPage />} />
-                            <Route path="/blog" element={<BlogPage />} />
-                            <Route path="/blog/:category/:slug" element={<BlogDetail />} />
-                            <Route path="/about" element={<AboutPage />} />
-                            <Route path="/services" element={<ServicesPage />} />
-                            <Route path="/privacy" element={<PrivacyPolicy />} />
-                            <Route path="/terms" element={<TermsOfService />} />
-                            <Route path="/careers" element={<CareersPage />} />
-                            <Route path="/spotify-gelir-hesaplama" element={<Calculator />} />
-                            {/* Catch-all route to NotFound safely to prevent Soft 404s */}
-                            <Route path="*" element={<NotFound />} />
-                        </Routes>
+                        <React.Suspense fallback={<div className="min-h-screen flex items-center justify-center text-purple-500 animate-pulse font-bold tracking-[0.2em] uppercase text-xs">Loading Frequencies...</div>}>
+                            <Routes>
+                                <Route path="/" element={<HomePage />} />
+                                <Route path="/artists" element={<ArtistsPage />} />
+                                <Route path="/artists/:id" element={<ArtistDetail />} />
+                                <Route path="/releases" element={<ReleasesPage />} />
+                                <Route path="/submit" element={<SubmitPage />} />
+                                <Route path="/blog" element={<BlogPage />} />
+                                <Route path="/blog/:category/:slug" element={<BlogDetail />} />
+                                <Route path="/about" element={<AboutPage />} />
+                                <Route path="/services" element={<ServicesPage />} />
+                                <Route path="/privacy" element={<PrivacyPolicy />} />
+                                <Route path="/terms" element={<TermsOfService />} />
+                                <Route path="/careers" element={<CareersPage />} />
+                                <Route path="/spotify-gelir-hesaplama" element={<Calculator />} />
+                                {/* Catch-all route to NotFound safely to prevent Soft 404s */}
+                                <Route path="*" element={<NotFound />} />
+                            </Routes>
+                        </React.Suspense>
                         <Footer />
                     </motion.div>
                 )}
