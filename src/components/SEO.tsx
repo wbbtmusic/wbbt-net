@@ -37,9 +37,29 @@ const SEO = ({
     const finalTitle = title || pageSEO?.seo.title || "WBBT Records | Unlimited Free Music Releases & Label Services";
     const finalDesc = description || pageSEO?.seo.description || "Upload your music to Spotify, Apple Music & TikTok for free. Keep 100% of your royalties. WBBT Records is the next-gen record label offering free release services, global radio pitching, and artist development.";
     const finalImage = image || "https://static.wixstatic.com/media/27c1cc_ddcac3da9bea4394b990d38b83009142~mv2.jpg";
-    const finalKeywords = keywords || "Free Music Distribution, Bedava Müzik Dağıtımı, Unlimited Free Releases, Upload Music to Spotify, Keep 100% Royalties, Vevo Channel Free, Radio PR, Independent Record Label, Music Distribution Service, Spotify Gelir Hesaplama, Unchained Music Review, Music Marketing, Artist Development, Royalty Collection, Kayıt Etiketi, Müzik Dağıtım Platformu, EDM, Dark Pop, London Record Label, Burak Can Öğüt, Free Vevo Distribution, Get Vevo Channel for Free, Best Free Music Distributor, Fast Music Distribution, RouteNote Alternative, Amuse Alternative, DistroKid Alternative";
+    const finalKeywords = keywords || "Free Music Distribution, Best Free Music Distributor, Free Record Label Services, 100% Royalties, Bedava Müzik Dağıtımı, Upload Music to Spotify, Keep 100% Royalties, Vevo Channel Free, Radio PR, Independent Record Label, Music Distribution Service, Spotify Gelir Hesaplama, Unchained Music Review, Music Marketing, Artist Development, Royalty Collection, Kayıt Etiketi, Müzik Dağıtım Platformu, EDM, Dark Pop, London Record Label, Burak Can Öğüt, Free Vevo Distribution, Get Vevo Channel for Free, Fast Music Distribution, RouteNote Alternative, Amuse Alternative, DistroKid Alternative";
 
-    const schemas = Array.isArray(schema) ? schema : schema ? [schema] : [];
+    // Build the Organization & MusicLabel Core Schemas
+    const baseSchemas = [
+        {
+            "@context": "https://schema.org",
+            "@type": "MusicLabel",
+            "name": "WBBT Records",
+            "url": "https://www.wbbt.net",
+            "logo": "https://static.wixstatic.com/media/27c1cc_ddcac3da9bea4394b990d38b83009142~mv2.jpg",
+            "sameAs": [
+                "https://www.instagram.com/wbbtrecords",
+                "https://twitter.com/wbbtrecords"
+            ],
+            "description": "The best free music distributor and independent record label offering 100% royalties, Vevo channel distribution, and Spotify playlist pitching.",
+            "foundingLocation": {
+                "@type": "Place",
+                "name": "London, UK"
+            }
+        }
+    ];
+
+    const schemas = Array.isArray(schema) ? [...baseSchemas, ...schema] : schema ? [...baseSchemas, schema] : baseSchemas;
 
     return (
         <Helmet>

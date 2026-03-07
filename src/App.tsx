@@ -26,6 +26,8 @@ import ServicesPage from './pages/Services';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CareersPage from './pages/Careers';
+import NotFound from './pages/NotFound';
+import Calculator from './pages/Calculator';
 
 const App = () => {
     const location = useLocation();
@@ -107,7 +109,9 @@ const App = () => {
                             <Route path="/privacy" element={<PrivacyPolicy />} />
                             <Route path="/terms" element={<TermsOfService />} />
                             <Route path="/careers" element={<CareersPage />} />
-                            <Route path="*" element={<HomePage />} />
+                            <Route path="/spotify-gelir-hesaplama" element={<Calculator />} />
+                            {/* Catch-all route to NotFound safely to prevent Soft 404s */}
+                            <Route path="*" element={<NotFound />} />
                         </Routes>
                         <Footer />
                     </motion.div>

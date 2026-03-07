@@ -1,18 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /login
-Disallow: /dashboard
-Disallow: /register
-Disallow: /api/
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
+Allow: /blog/
+Allow: /artists/
+Allow: /releases/
+Disallow: /members-area/
+Disallow: /contact-8
 
 Sitemap: https://www.wbbt.net/sitemap.xml

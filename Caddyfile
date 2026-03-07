@@ -1,5 +1,10 @@
 # Caddyfile
 # Replace :80 with your domain (e.g., wbbt.net) for automatic HTTPS
 :80 {
+    # SEO 301 Redirects for old Wix links
+    redir /category/* / 301
+    redir /product-page/* /services 301
+    redir /contact-8 /submit 301
+
     reverse_proxy app:80
 }

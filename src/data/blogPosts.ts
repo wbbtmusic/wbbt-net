@@ -1,4 +1,5 @@
 import { BlogPost } from '../types';
+import { post100 } from './blog/post-100';
 import { post1 } from './blog/post-1';
 import { post2 } from './blog/post-2';
 import { post3 } from './blog/post-3';
@@ -87,6 +88,7 @@ import { post92 } from './blog/post-92';
 import { post93 } from './blog/post-93';
 
 export const BLOG_POSTS: BlogPost[] = [
+    post100,
     post93,
     post92,
     post91,
