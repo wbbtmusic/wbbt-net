@@ -5,7 +5,7 @@ import { useData } from '../context/DataContext';
 import { Calendar, User, Tag, ArrowLeft, X, Clock } from 'lucide-react';
 import DOMPurify from 'dompurify';
 import SEO from '../components/SEO';
-import QuizSection from '../components/QuizSection';
+import BlogInteractiveTools from '../components/BlogInteractiveTools';
 import { generateBlogPostingSchema, generateBreadcrumbSchema } from '../utils/seoUtils';
 
 const BlogDetail = () => {
@@ -147,10 +147,22 @@ const BlogDetail = () => {
                         />
                     </div>
 
-                    {/* Quiz Section (Interaction) */}
-                    <QuizSection category={post.category} />
+                    {/* Highly Custom Interactive Mini-Tools based on Blog ID */}
+                    <BlogInteractiveTools postId={post.id} />
 
-
+                    {/* Google AdSense Integration inside the Article Body */}
+                    <div className="w-full bg-black/50 border border-white/5 rounded-2xl p-4 flex justify-center items-center my-16 min-h-[120px]">
+                        <p className="text-gray-700 text-xs text-center mb-2 w-full absolute pointer-events-none">Advertisement</p>
+                        <ins className="adsbygoogle"
+                            style={{ display: 'block', width: '100%', minHeight: '90px' }}
+                            data-ad-client="ca-pub-9997362639948029"
+                            data-ad-slot="9876543210"
+                            data-ad-format="fluid"
+                            data-ad-layout="in-article"></ins>
+                        <script dangerouslySetInnerHTML={{
+                            __html: '(adsbygoogle = window.adsbygoogle || []).push({});'
+                        }}></script>
+                    </div>
 
                     {/* Related Posts Section (To add length and value) */}
                     <aside className="mt-32 border-t border-white/10 pt-20">
