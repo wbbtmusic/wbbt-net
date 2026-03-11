@@ -43,18 +43,38 @@ const SEO = ({
     const baseSchemas = [
         {
             "@context": "https://schema.org",
-            "@type": "MusicLabel",
+            "@type": ["MusicGroup", "Organization"],
+            "@id": "https://www.wbbt.net/#organization",
             "name": "WBBT Records",
+            "legalName": "WBBT Music Group Inc.",
+            "alternateName": ["WBBT Recording Limited", "WBBT Music Group", "WBBT"],
             "url": "https://www.wbbt.net",
-            "logo": "https://static.wixstatic.com/media/27c1cc_ddcac3da9bea4394b990d38b83009142~mv2.jpg",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.wbbt.net/favicon.png",
+                "width": 512,
+                "height": 512
+            },
             "sameAs": [
-                "https://www.instagram.com/wbbtrecords",
-                "https://twitter.com/wbbtrecords"
+                "https://www.wikidata.org/wiki/Q138641325",
+                "https://www.instagram.com/wbbtmusic",
+                "https://twitter.com/wbbtrecords",
+                "https://www.youtube.com/@WBBTRecords",
+                "https://www.linkedin.com/company/wbbt-records",
+                "https://open.spotify.com/artist/1oP8YujvJmuBtwoMD6r2aA",
+                "https://music.apple.com/us/artist/wbbt/1667468622",
+                "https://www.discogs.com/label/4478524-WBBT-Records"
             ],
-            "description": "The best free music distributor and independent record label offering 100% royalties, Vevo channel distribution, and Spotify playlist pitching.",
+            "description": "WBBT Records is a premier UK-based independent record label founded in 2020, specializing in EDM, Dark Pop, and K-Pop. Free music distribution with 100% royalties, Vevo channel distribution, and Spotify playlist pitching.",
+            "foundingDate": "2020",
             "foundingLocation": {
                 "@type": "Place",
-                "name": "London, UK"
+                "name": "London, United Kingdom"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Burak Can Öğüt",
+                "sameAs": ["https://www.wikidata.org/wiki/Q138641365"]
             }
         }
     ];

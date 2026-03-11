@@ -1,4 +1,6 @@
 import { BlogPost } from '../types';
+import { post107 } from './blog/post-107';
+import { post106 } from './blog/post-106';
 import { post105 } from './blog/post-105';
 import { post104 } from './blog/post-104';
 import { post103 } from './blog/post-103';
@@ -93,6 +95,8 @@ import { post92 } from './blog/post-92';
 import { post93 } from './blog/post-93';
 
 export const BLOG_POSTS: BlogPost[] = [
+    post107,
+    post106,
     post105,
     post104,
     post103,

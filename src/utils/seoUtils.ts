@@ -2,40 +2,79 @@ import { Artist, Release, BlogPost } from '../types';
 
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
-    "@type": "RecordLabel",
+    "@type": ["MusicGroup", "Organization"],
+    "@id": "https://www.wbbt.net/#organization",
     "name": "WBBT Records",
+    "legalName": "WBBT Music Group Inc.",
+    "alternateName": ["WBBT Recording Limited", "WBBT Music Group", "WBBT"],
     "url": "https://www.wbbt.net",
-    "logo": "https://www.wbbt.net/favicon.png",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.wbbt.net/favicon.png",
+        "width": 512,
+        "height": 512
+    },
+    "image": "https://www.wbbt.net/favicon.png",
+    "description": "WBBT Records is a premier UK-based independent record label founded in 2020, specializing in EDM, Dark Pop, and K-Pop. We offer free music distribution with 100% royalties, Vevo channel distribution, and Spotify playlist pitching.",
     "sameAs": [
+        "https://www.wikidata.org/wiki/Q138641325",
+        "https://www.instagram.com/wbbtmusic",
         "https://twitter.com/wbbtrecords",
-        "https://instagram.com/wbbt",
+        "https://www.youtube.com/@WBBTRecords",
         "https://www.linkedin.com/company/wbbt-records",
-        "https://www.youtube.com/@WBBTRecords"
+        "https://open.spotify.com/artist/1oP8YujvJmuBtwoMD6r2aA",
+        "https://music.apple.com/us/artist/wbbt/1667468622",
+        "https://www.discogs.com/label/4478524-WBBT-Records",
+        "https://musicbrainz.org/label/WBBT-Records"
     ],
     "founder": {
         "@type": "Person",
+        "@id": "https://www.wbbt.net/#founder",
         "name": "Burak Can Öğüt",
         "url": "https://www.wbbt.net/artists/wbbt",
+        "jobTitle": "Founder & CEO",
         "sameAs": [
+            "https://www.wikidata.org/wiki/Q138641365",
             "https://www.instagram.com/burakcanogut",
-            "https://www.linkedin.com/in/burakcanogut"
+            "https://www.linkedin.com/in/burakcanogut",
+            "https://open.spotify.com/artist/1oP8YujvJmuBtwoMD6r2aA"
         ]
     },
     "foundingDate": "2020",
+    "foundingLocation": {
+        "@type": "Place",
+        "name": "London, United Kingdom"
+    },
+    "areaServed": "Worldwide",
+    "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 2,
+        "maxValue": 10
+    },
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "UNIT 2 HORTON INDUSTRIAL PARK, HORTON ROAD",
         "addressLocality": "WEST DRAYTON",
         "addressRegion": "MIDDLESEX",
         "postalCode": "UB7 8JD",
-        "addressCountry": "UK"
+        "addressCountry": "GB"
     },
     "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
         "email": "support@wbbt.net",
         "url": "https://www.wbbt.net/contact"
-    }
+    },
+    "knowsAbout": ["Music Distribution", "Record Label", "Artist Management", "Music Production", "EDM", "Dark Pop", "K-Pop"],
+    "genre": ["Electronic Dance Music", "Dark Pop", "K-Pop", "Phonk", "Hip-Hop"],
+    "member": [
+        { "@type": "Person", "name": "HUGOLA", "url": "https://www.wbbt.net/artists/hugola" },
+        { "@type": "Person", "name": "OYKU", "url": "https://www.wbbt.net/artists/oyku" },
+        { "@type": "Person", "name": "AVA AURORA", "url": "https://www.wbbt.net/artists/ava-aurora" },
+        { "@type": "Person", "name": "VOXA", "url": "https://www.wbbt.net/artists/voxa" },
+        { "@type": "Person", "name": "VIXT", "url": "https://www.wbbt.net/artists/vixt" },
+        { "@type": "Person", "name": "brokeplus", "url": "https://www.wbbt.net/artists/brokeplus" }
+    ]
 });
 
 export const generateWebSiteSchema = () => ({

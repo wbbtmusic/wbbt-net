@@ -44,7 +44,7 @@ const Footer = () => (
             </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-8 border-t border-white/10 text-xs text-gray-500 uppercase tracking-widest">
-            <p>&copy; 2026 WBBT Records. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} WBBT Recording Limited under exclusive license to WBBT Music Group Inc. All rights reserved.</p>
             <div className="flex gap-6 md:gap-8">
                 <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                 <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
