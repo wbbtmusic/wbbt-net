@@ -209,16 +209,14 @@ const BlogDetail = () => {
 
                 </article>
 
-                {/* Footer Nav */}
-                <div className="border-t border-white/10 py-32 text-center mt-20 bg-gradient-to-b from-[#050505] to-purple-900/10 relative">
-                    <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+                {/* Back to Blog CTA */}
+                <div className="py-20 text-center mt-10">
                     <button
                         onClick={() => navigate('/blog')}
                         className="inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-white/50 hover:text-white transition-all hover:tracking-[0.3em] duration-300 group"
                     >
                         <ArrowLeft size={16} className="group-hover:-translate-x-2 transition-transform" /> Back to Journal
                     </button>
-                    <p className="mt-8 text-gray-500 text-sm">WBBT Records © 2026</p>
                 </div>
 
             </motion.div>
