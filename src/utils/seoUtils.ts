@@ -2,20 +2,22 @@ import { Artist, Release, BlogPost } from '../types';
 
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
-    "@type": ["MusicGroup", "Organization"],
+    "@type": ["MusicGroup", "Organization", "RecordLabel"],
     "@id": "https://www.wbbt.net/#organization",
     "name": "WBBT Records",
     "legalName": "WBBT Music Group Inc.",
-    "alternateName": ["WBBT Recording Limited", "WBBT Music Group", "WBBT"],
+    "alternateName": ["WBBT Recording Limited", "WBBT Music Group", "WBBT", "WBBT Records"],
+    "slogan": "Unleashing the independent sound.",
     "url": "https://www.wbbt.net",
     "logo": {
         "@type": "ImageObject",
         "url": "https://www.wbbt.net/favicon.png",
         "width": 512,
-        "height": 512
+        "height": 512,
+        "caption": "WBBT Records Official Logo"
     },
     "image": "https://www.wbbt.net/favicon.png",
-    "description": "WBBT Records is a premier UK-based independent record label founded in 2020, specializing in EDM, Dark Pop, and K-Pop. We offer free music distribution with 100% royalties, Vevo channel distribution, and Spotify playlist pitching.",
+    "description": "WBBT Records is a premier independent record label founded in 2020, specializing in EDM, Dark Pop, and K-Pop. Operating globally, WBBT offers free music distribution with 100% royalties, Vevo channel management, sync licensing, and algorithmic Spotify pitching.",
     "sameAs": [
         "https://www.wikidata.org/wiki/Q138641325",
         "https://www.instagram.com/wbbtmusic",
@@ -25,48 +27,90 @@ export const generateOrganizationSchema = () => ({
         "https://open.spotify.com/artist/1oP8YujvJmuBtwoMD6r2aA",
         "https://music.apple.com/us/artist/wbbt/1667468622",
         "https://www.discogs.com/label/4478524-WBBT-Records",
-        "https://musicbrainz.org/label/WBBT-Records"
+        "https://musicbrainz.org/label/WBBT-Records",
+        "https://soundcloud.com/wbbtrecords"
     ],
     "founder": {
         "@type": "Person",
         "@id": "https://www.wbbt.net/#founder",
         "name": "Burak Can Öğüt",
+        "givenName": "Burak Can",
+        "familyName": "Öğüt",
         "url": "https://www.wbbt.net/artists/wbbt",
-        "jobTitle": "Founder & CEO",
+        "jobTitle": ["Founder", "CEO", "Music Executive", "Producer"],
+        "description": "Burak Can Öğüt is a music executive, producer, and the founder of WBBT Records. He specializes in algorithmic music marketing, digital distribution, and independent artist development.",
+        "nationality": {
+            "@type": "Country",
+            "name": "Turkey"
+        },
+        "knowsLanguage": [
+            { "@type": "Language", "name": "Turkish", "alternateName": "tr" },
+            { "@type": "Language", "name": "English", "alternateName": "en" }
+        ],
         "sameAs": [
             "https://www.wikidata.org/wiki/Q138641365",
             "https://www.instagram.com/burakcanogut",
             "https://www.linkedin.com/in/burakcanogut",
             "https://open.spotify.com/artist/1oP8YujvJmuBtwoMD6r2aA"
-        ]
+        ],
+        "knowsAbout": ["Music Production", "Digital Marketing", "Music Publishing", "A&R", "Software Development"],
+        "worksFor": {
+            "@id": "https://www.wbbt.net/#organization"
+        }
     },
     "foundingDate": "2020",
     "foundingLocation": {
         "@type": "Place",
         "name": "London, United Kingdom"
     },
+    "location": {
+        "@type": "Place",
+        "name": "London"
+    },
     "areaServed": "Worldwide",
     "numberOfEmployees": {
         "@type": "QuantitativeValue",
         "minValue": 2,
-        "maxValue": 10
+        "maxValue": 15
     },
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "UNIT 2 HORTON INDUSTRIAL PARK, HORTON ROAD",
-        "addressLocality": "WEST DRAYTON",
-        "addressRegion": "MIDDLESEX",
-        "postalCode": "UB7 8JD",
-        "addressCountry": "GB"
+    "address": [
+        {
+            "@type": "PostalAddress",
+            "streetAddress": "UNIT 2 HORTON INDUSTRIAL PARK, HORTON ROAD",
+            "addressLocality": "WEST DRAYTON",
+            "addressRegion": "MIDDLESEX",
+            "postalCode": "UB7 8JD",
+            "addressCountry": "GB"
+        }
+    ],
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "support@wbbt.net",
+            "url": "https://www.wbbt.net/contact",
+            "availableLanguage": ["English", "Turkish"]
+        },
+        {
+            "@type": "ContactPoint",
+            "contactType": "A&R / Demo Submissions",
+            "email": "demo@wbbt.net",
+            "url": "https://www.wbbt.net/submit",
+            "availableLanguage": ["English", "Turkish"]
+        }
+    ],
+    "knowsAbout": ["Music Distribution", "Record Label", "Artist Management", "Music Production", "EDM", "Dark Pop", "K-Pop", "Music Marketing", "Copyright Management", "Music Licensing"],
+    "seeks": [
+        "Unsigned Artists", "Music Demos", "Collaborations"
+    ],
+    "offers": {
+        "@type": "Offer",
+        "name": "Free Music Distribution",
+        "description": "Unlimited transparent music distribution to Spotify, Apple Music, and TikTok keeping 100% of royalties.",
+        "price": "0.00",
+        "priceCurrency": "USD"
     },
-    "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "email": "support@wbbt.net",
-        "url": "https://www.wbbt.net/contact"
-    },
-    "knowsAbout": ["Music Distribution", "Record Label", "Artist Management", "Music Production", "EDM", "Dark Pop", "K-Pop"],
-    "genre": ["Electronic Dance Music", "Dark Pop", "K-Pop", "Phonk", "Hip-Hop"],
+    "genre": ["Electronic Dance Music", "Dark Pop", "K-Pop", "Phonk", "Hip-Hop", "Drill", "Experimental"],
     "member": [
         { "@type": "Person", "name": "HUGOLA", "url": "https://www.wbbt.net/artists/hugola" },
         { "@type": "Person", "name": "OYKU", "url": "https://www.wbbt.net/artists/oyku" },
